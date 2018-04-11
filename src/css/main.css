@@ -1,0 +1,163 @@
+/*
+ * GLOBAL
+ */
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+header {
+  height: 100vh;
+}
+
+a:hover {
+ text-decoration: none;
+}
+
+/*
+ * NAVBAR
+ */
+
+.navbar-brand {
+  color: #444 !important;
+  font-family: 'Caesar Dressing', cursive;
+  letter-spacing: 2px;
+}
+
+/*
+ * CAROUSEL
+ */
+
+.carousel {
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  height: 100%;
+  background-color: #777;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.slide-1 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
+}
+
+.slide-2 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
+}
+
+.slide-3 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
+}
+
+.slide-4 {
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
+}
+
+.carousel-caption {
+  bottom: initial;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.carousel-caption > hr {
+  display: block;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.carousel-caption > h1 {
+  font-family: 'Caesar Dressing', cursive;
+  font-size: 3rem;
+  letter-spacing: 5px;
+}
+
+.carousel-caption > p {
+  font-family: 'Playball', cursive;
+  font-size: 1rem;
+  letter-spacing: normal;
+  margin-bottom: 0;
+}
+
+.fa-university {
+  font-size: 5rem;
+  position: relative;
+  bottom: 20px;
+}
+
+.btn-custom {
+  padding: .2rem .4rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .carousel-caption > h1 {
+    font-size: 4.5rem;
+    letter-spacing: 10px;
+  }
+  .carousel-caption > p {
+    font-size: 1.5rem;
+    letter-spacing: normal;
+  }
+  .btn-custom {
+    padding: .3rem .6rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .carousel-caption > h1 {
+    font-size: 6.5rem;
+    letter-spacing: 15px;
+  }
+  .carousel-caption > h1 > small {
+    font-size: 2.5rem;
+    letter-spacing: normal;
+  }
+  .btn-custom {
+    padding: .45rem .9rem;
+  }
+}
+*/
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .carousel-caption > h1 {
+    font-size: 8.5rem;
+    letter-spacing: 20px;
+  }
+  .carousel-caption > p {
+    font-size: 3.5rem;
+    letter-spacing: normal;
+  }
+  .btn-custom {
+    padding: .675rem 1.35rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .carousel-caption > h1 {
+    font-size: 10.5rem;
+    letter-spacing: 25px;
+  }
+  .carousel-caption > h1 > small {
+    font-size: 4.5rem;
+    letter-spacing: normal;
+  }
+  .btn-custom {
+    padding: 1.0125rem 2.025rem;
+  }
+}
+*/
