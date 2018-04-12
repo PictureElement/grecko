@@ -51,9 +51,22 @@ a:hover {
 /*
  * NAVBAR
  */
- 
+
 .navbar {
   box-shadow: 0 4px 3px -3px #999;
+}
+
+/*
+ * MAIN
+ */
+main::after {
+  content: '';
+  /*a 30x30 SVG triangle in base64 format*/
+  background-image: url(../media/pattern.png);
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  bottom: -5px;
 }
 
 /*
