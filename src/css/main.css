@@ -49,6 +49,14 @@ a:hover {
 }
 
 /*
+ * NAVBAR
+ */
+ 
+.navbar {
+  box-shadow: 0 4px 3px -3px #999;
+}
+
+/*
  * CAROUSEL
  */
 
