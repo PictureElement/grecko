@@ -28,20 +28,23 @@ a:hover {
 
 .special-title-1 {
   font-size: 1rem;
+  text-shadow: 1px 1px 1px #000;
+  margin-bottom: 2rem;
   font-weight: 700;
+  color: #007bff;
 }
 
 .special-title-2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'Great Vibes', cursive;
 }
 
 .deep-shadow {
-  text-shadow: 
-    0 -1px 0 #fff, 
-    0 1px 0 #2e2e2e, 
-    0 2px 0 #2c2c2c, 
-    0 3px 0 #2a2a2a, 
+  text-shadow:
+    0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c,
+    0 3px 0 #2a2a2a,
     0 4px 0 #282828;
 }
 
@@ -50,7 +53,12 @@ a:hover {
  */
 
 .navbar {
-  box-shadow: 0 4px 3px -3px #999;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.navbar-brand {
+  letter-spacing: .2rem;
 }
 
 /*
@@ -59,7 +67,6 @@ a:hover {
 
 main::after {
   content: '';
-  /*a 30x30 SVG triangle in base64 format*/
   background-image: url(../media/pattern.png);
   position: absolute;
   width: 100%;
@@ -73,7 +80,7 @@ main::after {
 
 .cover {
   height: 100vh;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
 }
 
 .cover .carousel-inner {
@@ -82,33 +89,54 @@ main::after {
 
 .cover .carousel-item {
   height: 100%;
-  background-color: #777;
   background-position: center center;
+  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .slide-1 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/1.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
 }
 
 .slide-2 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/2.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
 }
 
 .slide-3 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/3.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
 }
 
 .slide-4 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/4.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
 }
 
-.carousel-caption {
+.cover .carousel-caption {
   bottom: initial;
   top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 10;
+}
+
+.cover h1 {
+  letter-spacing: .5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1.2;
 }
 
 /*
@@ -124,15 +152,18 @@ main::after {
  */
 
 .about-us {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-bottom: 4rem;
-  background-color: #777;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
   background-attachment: fixed;
   background-position: center center;
+  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/about-us.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/about-us.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about-us.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about-us.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about-us.jpg");
 }
 
 .about-us p {
@@ -140,11 +171,18 @@ main::after {
 }
 
 /*
- * DELIVERY 
+ * DELIVERY
  */
 
 .delivery {
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
+}
+
+/*
+ * GALLERY
+ */
+.gallery {
+  margin-bottom: 5rem;
 }
 
 /*
@@ -152,37 +190,41 @@ main::after {
  */
 
 .testimonials {
-  background-color: #f0f0f0;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  margin-bottom: 5rem;
+}
+
+.testimonials .carousel-inner {
+  min-height: 450px;
 }
 
 .testimonials .carousel-item {
   overflow: hidden;
-  min-height: 300px;
-  margin: 0 auto;
+  min-height: 450px;
 }
 
-.testimonial {
-  margin: 0 auto;
-  max-width: 600px;
-  padding: 30px 0 10px;
-  color: #333;
-}
-
-.overview {
-  color: #333;
-}
-
-.overview strong {
-  text-transform: uppercase;
-}
-
-.overview a {
-  color: red;
+.testimonials .carousel-caption {
+  bottom: initial;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
 }
 
 .fa-angle-left, .fa-angle-right {
-  color: red;
+  color: #000;
   font-size: 48px !important;
+}
+
+/*
+ * MEDIA QUERIES
+ */
+
+@media (min-width: 576px) {
+  .cover h1 {
+    letter-spacing: 1rem;
+    font-size: 5.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
 }
