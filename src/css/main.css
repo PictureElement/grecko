@@ -2,6 +2,10 @@
  * GLOBAL
  */
 
+html {
+  font-size: 12px;
+}
+
 body {
   font-size: 1rem;
 }
@@ -80,7 +84,6 @@ main::after {
 
 .cover {
   height: 100vh;
-  margin-bottom: 5rem;
 }
 
 .cover .carousel-inner {
@@ -140,21 +143,10 @@ main::after {
 }
 
 /*
- * MENU
- */
-
-.menu {
-  margin-bottom: 4rem;
-}
-
-/*
  * ABOUT US
  */
 
 .about-us {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  margin-bottom: 5rem;
   background-attachment: fixed;
   background-position: center center;
   -webkit-background-size: cover;
@@ -171,35 +163,20 @@ main::after {
 }
 
 /*
- * DELIVERY
- */
-
-.delivery {
-  margin-bottom: 5rem;
-}
-
-/*
- * GALLERY
- */
-.gallery {
-  margin-bottom: 5rem;
-}
-
-/*
  * TESTIMONIALS
  */
 
 .testimonials {
-  margin-bottom: 5rem;
+  background: #eee;
 }
 
 .testimonials .carousel-inner {
-  min-height: 450px;
+  min-height: 350px;
 }
 
 .testimonials .carousel-item {
   overflow: hidden;
-  min-height: 450px;
+  min-height: 350px;
 }
 
 .testimonials .carousel-caption {
@@ -221,6 +198,9 @@ main::after {
  */
 
 @media (min-width: 576px) {
+  html {
+    font-size: 16px;
+  }
   .cover h1 {
     letter-spacing: 1rem;
     font-size: 5.5rem;
