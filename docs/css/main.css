@@ -1,16 +1,9 @@
 /*
  * GLOBAL
  */
-html {
-  font-size: 1rem;
-}
 
 body {
-  font-family: 'Raleway', sans-serif;
-}
-
-header {
-  height: 100vh;
+  font-size: 1rem;
 }
 
 a:hover {
@@ -18,28 +11,76 @@ a:hover {
 }
 
 /*
- * NAVBAR
+ * HELPER CLASSES
  */
 
-.navbar-brand {
-  color: #444 !important;
+.font-family-1 {
+  font-family: 'Raleway', sans-serif;
+}
+
+.font-family-2 {
   font-family: 'Caesar Dressing', cursive;
-  letter-spacing: 2px;
+}
+
+.font-family-3 {
+  font-family: 'Great Vibes', cursive;
+}
+
+.special-title-1 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.special-title-2 {
+  font-size: 2rem;
+  font-family: 'Great Vibes', cursive;
+}
+
+.deep-shadow {
+  text-shadow: 
+    0 -1px 0 #fff, 
+    0 1px 0 #2e2e2e, 
+    0 2px 0 #2c2c2c, 
+    0 3px 0 #2a2a2a, 
+    0 4px 0 #282828;
 }
 
 /*
- * CAROUSEL
+ * NAVBAR
  */
 
-.carousel {
+.navbar {
+  box-shadow: 0 4px 3px -3px #999;
+}
+
+/*
+ * MAIN
+ */
+
+main::after {
+  content: '';
+  /*a 30x30 SVG triangle in base64 format*/
+  background-image: url(../media/pattern.png);
+  position: absolute;
+  width: 100%;
+  height: 32px;
+  bottom: -5px;
+}
+
+/*
+ * COVER
+ */
+
+.cover {
+  height: 100vh;
+  margin-bottom: 4rem;
+}
+
+.cover .carousel-inner {
   height: 100%;
 }
 
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-item {
+.cover .carousel-item {
   height: 100%;
   background-color: #777;
   background-position: center center;
@@ -52,15 +93,15 @@ a:hover {
 }
 
 .slide-2 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
 }
 
 .slide-3 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
 }
 
 .slide-4 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
 }
 
 .carousel-caption {
@@ -70,94 +111,78 @@ a:hover {
   z-index: 10;
 }
 
-.carousel-caption > hr {
-  display: block;
-  border: 0;
-  height: 1px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+/*
+ * MENU
+ */
+
+.menu {
+  margin-bottom: 4rem;
 }
 
-.carousel-caption > h1 {
-  font-family: 'Caesar Dressing', cursive;
-  font-size: 3rem;
-  letter-spacing: 5px;
+/*
+ * ABOUT US
+ */
+
+.about-us {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  background-color: #777;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/about-us.jpg");
 }
 
-.carousel-caption > p {
-  font-family: 'Playball', cursive;
-  font-size: 1rem;
-  letter-spacing: normal;
-  margin-bottom: 0;
+.about-us p {
+  max-width: 600px;
 }
 
-.fa-university {
-  font-size: 5rem;
-  position: relative;
-  bottom: 20px;
+/*
+ * DELIVERY 
+ */
+
+.delivery {
+  margin-bottom: 4rem;
 }
 
-.btn-custom {
-  padding: .2rem .4rem;
+/*
+ * TESTIMONIALS
+ */
+
+.testimonials {
+  background-color: #f0f0f0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .carousel-caption > h1 {
-    font-size: 4.5rem;
-    letter-spacing: 10px;
-  }
-  .carousel-caption > p {
-    font-size: 1.5rem;
-    letter-spacing: normal;
-  }
-  .btn-custom {
-    padding: .3rem .6rem;
-  }
+.testimonials .carousel-item {
+  overflow: hidden;
+  min-height: 300px;
+  margin: 0 auto;
 }
 
-/* Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-  .carousel-caption > h1 {
-    font-size: 6.5rem;
-    letter-spacing: 15px;
-  }
-  .carousel-caption > h1 > small {
-    font-size: 2.5rem;
-    letter-spacing: normal;
-  }
-  .btn-custom {
-    padding: .45rem .9rem;
-  }
-}
-*/
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
-  .carousel-caption > h1 {
-    font-size: 8.5rem;
-    letter-spacing: 20px;
-  }
-  .carousel-caption > p {
-    font-size: 3.5rem;
-    letter-spacing: normal;
-  }
-  .btn-custom {
-    padding: .675rem 1.35rem;
-  }
+.testimonial {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 30px 0 10px;
+  color: #333;
 }
 
-/* Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .carousel-caption > h1 {
-    font-size: 10.5rem;
-    letter-spacing: 25px;
-  }
-  .carousel-caption > h1 > small {
-    font-size: 4.5rem;
-    letter-spacing: normal;
-  }
-  .btn-custom {
-    padding: 1.0125rem 2.025rem;
-  }
+.overview {
+  color: #333;
 }
-*/
+
+.overview strong {
+  text-transform: uppercase;
+}
+
+.overview a {
+  color: red;
+}
+
+.fa-angle-left, .fa-angle-right {
+  color: red;
+  font-size: 48px !important;
+}
