@@ -1,9 +1,6 @@
 /*
  * GLOBAL
  */
-html {
-  font-size: 16px;
-}
 
 body {
   font-size: 1rem;
@@ -59,6 +56,7 @@ a:hover {
 /*
  * MAIN
  */
+
 main::after {
   content: '';
   /*a 30x30 SVG triangle in base64 format*/
@@ -70,19 +68,19 @@ main::after {
 }
 
 /*
- * CAROUSEL
+ * COVER
  */
 
-.carousel {
+.cover {
   height: 100vh;
   margin-bottom: 4rem;
 }
 
-.carousel-inner {
+.cover .carousel-inner {
   height: 100%;
 }
 
-.carousel-item {
+.cover .carousel-item {
   height: 100%;
   background-color: #777;
   background-position: center center;
@@ -116,6 +114,7 @@ main::after {
 /*
  * MENU
  */
+
 .menu {
   margin-bottom: 4rem;
 }
@@ -123,6 +122,7 @@ main::after {
 /*
  * ABOUT US
  */
+
 .about-us {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -135,13 +135,54 @@ main::after {
   background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../media/about-us.jpg");
 }
 
-.about-us > .container {
+.about-us p {
   max-width: 600px;
 }
 
 /*
  * DELIVERY 
  */
+
 .delivery {
   margin-bottom: 4rem;
+}
+
+/*
+ * TESTIMONIALS
+ */
+
+.testimonials {
+  background-color: #f0f0f0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.testimonials .carousel-item {
+  overflow: hidden;
+  min-height: 300px;
+  margin: 0 auto;
+}
+
+.testimonial {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 30px 0 10px;
+  color: #333;
+}
+
+.overview {
+  color: #333;
+}
+
+.overview strong {
+  text-transform: uppercase;
+}
+
+.overview a {
+  color: red;
+}
+
+.fa-angle-left, .fa-angle-right {
+  color: red;
+  font-size: 48px !important;
 }
