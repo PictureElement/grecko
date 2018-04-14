@@ -8,10 +8,15 @@ html {
 
 body {
   font-size: 1rem;
+  color: #404040;
 }
 
 a:hover {
  text-decoration: none;
+}
+
+label {
+  font-weight: 700;
 }
 
 /*
@@ -87,31 +92,19 @@ main::after {
 }
 
 .slide-1 {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/1.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
 }
 
 .slide-2 {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/2.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
 }
 
 .slide-3 {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/3.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
 }
 
 .slide-4 {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/4.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
 }
 
 .cover .carousel-caption {
@@ -156,6 +149,14 @@ main::after {
 }
 
 /*
+ * DELIVERY 
+ */
+
+.card-text, .card-title {
+  color: #404040;
+}
+
+/*
  * TESTIMONIALS
  */
 
@@ -186,12 +187,24 @@ main::after {
   font-size: 48px !important;
 }
 
+blockquote p {
+  color: #404040;
+}
+
 /*
  * GOOGLE MAP 
  */
- #map {
+ .google-map {
   height: 400px;
   width: 100%;
+}
+
+/*
+ * RESERVATIONS
+ */
+
+.reservations p {
+  max-width: 600px;
 }
 
 /*
