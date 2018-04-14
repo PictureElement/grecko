@@ -23,10 +23,6 @@ a:hover {
 }
 
 .font-family-2 {
-  font-family: 'Caesar Dressing', cursive;
-}
-
-.font-family-3 {
   font-family: 'Great Vibes', cursive;
 }
 
@@ -41,15 +37,6 @@ a:hover {
 .special-title-2 {
   font-size: 3rem;
   font-family: 'Great Vibes', cursive;
-}
-
-.deep-shadow {
-  text-shadow:
-    0 -1px 0 #fff,
-    0 1px 0 #2e2e2e,
-    0 2px 0 #2c2c2c,
-    0 3px 0 #2a2a2a,
-    0 4px 0 #282828;
 }
 
 /*
@@ -92,6 +79,7 @@ main::after {
 
 .cover .carousel-item {
   height: 100%;
+  background-color: #777;
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -135,11 +123,16 @@ main::after {
   z-index: 10;
 }
 
-.cover h1 {
+.textual-brand {
+  font-family: 'Poiret One', cursive;
   letter-spacing: .5rem;
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
+  text-shadow:
+    0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c;
 }
 
 /*
