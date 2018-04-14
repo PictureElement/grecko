@@ -182,8 +182,16 @@ main::after {
 }
 
 .fa-angle-left, .fa-angle-right {
-  color: #000;
+  color: #007bff;
   font-size: 48px !important;
+}
+
+/*
+ * GOOGLE MAP 
+ */
+ #map {
+  height: 400px;
+  width: 100%;
 }
 
 /*

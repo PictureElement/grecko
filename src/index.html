@@ -224,7 +224,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam at enim elit. Nam malesuada ullamcorper faucibus.
                   </p>
-                  <footer class="blockquote-footer">Michael Freemon, <cite title="Source Title">Trip Advisor</cite></footer>
+                  <footer class="blockquote-footer">Michael Freemon, <cite class="text-primary" title="Source Title">Trip Advisor</cite></footer>
                 </blockquote>
               </div>
             </div>
@@ -236,7 +236,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam at enim elit. Nam malesuada ullamcorper faucibus. 
                   </p>
-                  <footer class="blockquote-footer">Marie Lu, <cite title="Source Title">Trip Advisor</cite></footer>
+                  <footer class="blockquote-footer">Marie Lu, <cite class="text-primary" title="Source Title">Trip Advisor</cite></footer>
                 </blockquote>
               </div>
             </div>
@@ -248,7 +248,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam at enim elit. Nam malesuada ullamcorper faucibus.
                   </p>
-                  <footer class="blockquote-footer">Jason Wu, <cite title="Source Title">Trip Advisor</cite></footer>
+                  <footer class="blockquote-footer">Jason Wu, <cite class="text-primary" title="Source Title">Trip Advisor</cite></footer>
                 </blockquote>
               </div>
             </div>
@@ -260,7 +260,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam at enim elit. Nam malesuada ullamcorper faucibus. 
                   </p>
-                  <footer class="blockquote-footer">Justine Henderson, <cite title="Source Title">Trip Advisor</cite></footer>
+                  <footer class="blockquote-footer">Justine Henderson, <cite class="text-primary" title="Source Title">Trip Advisor</cite></footer>
                 </blockquote>
               </div>
             </div>
@@ -272,7 +272,7 @@
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                     Nullam at enim elit. Nam malesuada ullamcorper faucibus. 
                   </p>
-                  <footer class="blockquote-footer">Brandon Little, <cite title="Source Title">Trip Advisor</cite></footer>
+                  <footer class="blockquote-footer">Brandon Little, <cite class="text-primary" title="Source Title">Trip Advisor</cite></footer>
                 </blockquote>
               </div>
             </div>
@@ -287,11 +287,42 @@
           </a>
         </div>
       </div>
+      <!-- GOOGLE MAP -->
+      <div id="map"></div>
     </main>
-    <!--
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    -->
+    <!-- Google map -->
+    <script>
+      function initMap() {
+        var styledMapType = new google.maps.StyledMapType(
+          [
+            {
+              featureType: "water",
+              elementType: "geometry",
+              "stylers": [
+                { "color": "#007bff" }
+              ]
+            }
+          ]
+        );
+        var uluru = {lat: 25.777302, lng: -80.186000};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru,
+          mapTypeControlOptions: {
+            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'styled_map']
+          }
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+        //Associate the styled map with the MapTypeId and set it to display.
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap"></script>
   </body>
 </html>
