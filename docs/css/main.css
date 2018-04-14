@@ -8,10 +8,15 @@ html {
 
 body {
   font-size: 1rem;
+  color: #404040;
 }
 
 a:hover {
- text-decoration: none;
+  text-decoration: none;
+}
+
+label {
+  font-weight: 700;
 }
 
 /*
@@ -23,10 +28,6 @@ a:hover {
 }
 
 .font-family-2 {
-  font-family: 'Caesar Dressing', cursive;
-}
-
-.font-family-3 {
   font-family: 'Great Vibes', cursive;
 }
 
@@ -41,15 +42,6 @@ a:hover {
 .special-title-2 {
   font-size: 3rem;
   font-family: 'Great Vibes', cursive;
-}
-
-.deep-shadow {
-  text-shadow:
-    0 -1px 0 #fff,
-    0 1px 0 #2e2e2e,
-    0 2px 0 #2c2c2c,
-    0 3px 0 #2a2a2a,
-    0 4px 0 #282828;
 }
 
 /*
@@ -69,6 +61,7 @@ a:hover {
  * MAIN
  */
 
+/*
 main::after {
   content: '';
   background-image: url(../media/pattern.png);
@@ -77,6 +70,7 @@ main::after {
   height: 32px;
   bottom: -5px;
 }
+*/
 
 /*
  * COVER
@@ -92,6 +86,7 @@ main::after {
 
 .cover .carousel-item {
   height: 100%;
+  background-color: #777;
   background-position: center center;
   -webkit-background-size: cover;
   background-size: cover;
@@ -99,31 +94,31 @@ main::after {
 }
 
 .slide-1 {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/1.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/1.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../media/1.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
 }
 
 .slide-2 {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/2.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/2.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../media/2.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
 }
 
 .slide-3 {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/3.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/3.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../media/3.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
 }
 
 .slide-4 {
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/4.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/4.jpg");
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../media/4.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
 }
 
 .cover .carousel-caption {
@@ -135,11 +130,16 @@ main::after {
   z-index: 10;
 }
 
-.cover h1 {
+.textual-brand {
+  font-family: 'Poiret One', cursive;
   letter-spacing: .5rem;
-  font-size: 3rem;
+  font-size: 4.5rem;
   font-weight: 300;
   line-height: 1.2;
+  text-shadow:
+    0 -1px 0 #fff,
+    0 1px 0 #2e2e2e,
+    0 2px 0 #2c2c2c;
 }
 
 /*
@@ -160,6 +160,14 @@ main::after {
 
 .about-us p {
   max-width: 600px;
+}
+
+/*
+ * DELIVERY
+ */
+
+.card-text, .card-title {
+  color: #404040;
 }
 
 /*
@@ -189,8 +197,28 @@ main::after {
 }
 
 .fa-angle-left, .fa-angle-right {
-  color: #000;
+  color: #007bff;
   font-size: 48px !important;
+}
+
+blockquote p {
+  color: #404040;
+}
+
+/*
+ * GOOGLE MAP
+ */
+ .google-map {
+  height: 400px;
+  width: 100%;
+}
+
+/*
+ * RESERVATIONS
+ */
+
+.reservations p {
+  max-width: 600px;
 }
 
 /*

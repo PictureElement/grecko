@@ -12,7 +12,7 @@ body {
 }
 
 a:hover {
- text-decoration: none;
+  text-decoration: none;
 }
 
 label {
@@ -61,6 +61,7 @@ label {
  * MAIN
  */
 
+/*
 main::after {
   content: '';
   background-image: url(../media/pattern.png);
@@ -69,6 +70,7 @@ main::after {
   height: 32px;
   bottom: -5px;
 }
+*/
 
 /*
  * COVER
@@ -92,18 +94,30 @@ main::after {
 }
 
 .slide-1 {
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../media/1.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
 }
 
 .slide-2 {
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../media/2.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
 }
 
 .slide-3 {
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../media/3.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
 }
 
 .slide-4 {
+  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../media/4.jpg");
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
+  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
 }
 
@@ -149,7 +163,7 @@ main::after {
 }
 
 /*
- * DELIVERY 
+ * DELIVERY
  */
 
 .card-text, .card-title {
@@ -192,7 +206,7 @@ blockquote p {
 }
 
 /*
- * GOOGLE MAP 
+ * GOOGLE MAP
  */
  .google-map {
   height: 400px;
