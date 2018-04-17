@@ -19,6 +19,19 @@ label {
   font-weight: 700;
 }
 
+hr {
+  margin: 6rem 0;
+}
+
+.google-map {
+  height: 400px;
+  width: 100%;
+}
+
+input, textarea {
+  border-radius: 0 !important;
+}
+
 /*
  * HELPER CLASSES
  */
@@ -42,6 +55,7 @@ label {
 .special-title-2 {
   font-size: 3rem;
   font-family: 'Great Vibes', cursive;
+  margin-bottom: 3rem;
 }
 
 /*
@@ -58,19 +72,64 @@ label {
 }
 
 /*
- * MAIN
+ * ANIMATIONS
  */
-
-/*
-main::after {
-  content: '';
-  background-image: url(../media/pattern.png);
-  position: absolute;
-  width: 100%;
-  height: 32px;
-  bottom: -5px;
+.deserts {
+  animation-delay: .25s;
+  /*
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
+  */
 }
-*/
+
+.drinks {
+  animation-delay: .5s;
+}
+
+.about-us-animation h3 {
+  animation-delay: .25s;
+}
+
+.about-us-animation p {
+  animation-delay: .5s;
+}
+
+.about-us-animation a {
+  animation-delay: .75s;
+}
+
+.delivery-animation h3 {
+  animation-delay: .25s;
+}
+
+#card-1 {
+  animation-delay: .5s;
+}
+
+#card-2 {
+  animation-delay: .75s;
+}
+
+#card-3 {
+  animation-delay: 1s;
+}
+
+.testimonials-animation h3 {
+  animation-delay: .25s;
+}
+
+.test-carousel {
+  animation-delay: .5s;
+}
+
+.reservations-description h3 {
+  animation-delay: .25s;
+}
+
+.reservations-description p {
+  animation-delay: .5s;
+}
 
 /*
  * COVER
@@ -143,55 +202,78 @@ main::after {
 }
 
 /*
- * ABOUT US
+ * MENU (DONE)
+ */
+
+.menu {
+  margin: 6rem auto;
+}
+
+.menu p {
+  margin-top: 3rem;
+}
+
+/*
+ * ABOUT US (DONE)
  */
 
 .about-us {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   background-attachment: fixed;
   background-position: center center;
-  -webkit-background-size: cover;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../media/about-us.jpg");
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about-us.jpg");
-  background-image: -o-linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about-us.jpg");
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about-us.jpg");
 }
 
 .about-us p {
-  max-width: 600px;
+  max-width: 50em;
+  margin-bottom: 4rem;
 }
 
 /*
- * DELIVERY
+ * DELIVERY (DONE)
  */
+
+.delivery {
+  padding-top: 6rem;
+}
 
 .card-text, .card-title {
   color: #404040;
 }
 
 /*
- * TESTIMONIALS
+ * GALLERY (DONE)
+ */
+
+.gallery {
+  margin-top: 6rem;
+}
+
+/*
+ * TESTIMONIALS (DONE)
  */
 
 .testimonials {
+  padding: 6rem 0;
   background: #eee;
 }
 
 .testimonials .carousel-inner {
-  min-height: 350px;
+  min-height: 340px;
 }
 
 .testimonials .carousel-item {
   overflow: hidden;
-  min-height: 350px;
+  min-height: 340px;
 }
 
 .testimonials .carousel-caption {
+  padding: 0;
   bottom: initial;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: 10;
 }
@@ -206,19 +288,80 @@ blockquote p {
 }
 
 /*
- * GOOGLE MAP
+ * RESERVATIONS (DONE)
  */
- .google-map {
-  height: 400px;
-  width: 100%;
+
+.reservations-description {
+  margin-top: calc(49.5px + 6rem);
+  margin-bottom: 6rem;
+  max-width: 50em;
+}
+
+.reservations-form {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #777;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/reservations.jpg");
+}
+
+.reservations-form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #d9d9d9 !important;
+}
+
+.reservations-form form {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.reservations-form label {
+  color: white;
+}
+
+.reservations-form input, .reservations-form textarea {
+  background: none !important;
+  border: 3px solid white !important;
+  color: #d9d9d9 !important;
 }
 
 /*
- * RESERVATIONS
+ * CONTACT (DONE)
  */
 
-.reservations p {
-  max-width: 600px;
+ .directions {
+  margin-top: calc(49.5px + 6rem);
+  max-width: 50em;
+}
+
+.contact {
+  max-width: 50em;
+}
+
+.contact-details {
+  padding-left: 3.5rem;
+}
+ 
+.contact-details h6 {
+  font-weight: 700;
+}
+
+.map-contact {
+  margin-top: 6rem;
+}
+
+.contact-form ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #262626 !important;
+}
+
+.contact-form label {
+  color: black;
+}
+
+.contact-form input, .contact-form textarea {
+  background: none !important;
+  border: 3px solid black !important;
 }
 
 /*
