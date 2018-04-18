@@ -11,8 +11,13 @@ body {
   color: #404040;
 }
 
+a {
+  color: inherit;
+}
+
 a:hover {
   text-decoration: none;
+  color: inherit;
 }
 
 label {
@@ -32,6 +37,25 @@ input, textarea {
   border-radius: 0 !important;
 }
 
+.fa {
+  font-size: 1.5em !important;
+  line-height: 48px !important;
+  color: rgba(255, 255, 255, 0.8);
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.fa:hover, .fa:active { 
+  transform: scale(1.1) rotate(360deg);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 1px 1px 3px #333; 
+}
+
 /*
  * HELPER CLASSES
  */
@@ -46,7 +70,6 @@ input, textarea {
 
 .special-title-1 {
   font-size: 1rem;
-  text-shadow: 1px 1px 1px #000;
   margin-bottom: 2rem;
   font-weight: 700;
   color: #007bff;
@@ -213,6 +236,10 @@ input, textarea {
   margin-top: 3rem;
 }
 
+.deserts, .drinks {
+  margin-top: 6rem;
+}
+
 /*
  * ABOUT US (DONE)
  */
@@ -258,7 +285,6 @@ input, textarea {
 
 .testimonials {
   padding: 6rem 0;
-  background: #eee;
 }
 
 .testimonials .carousel-inner {
@@ -278,12 +304,19 @@ input, textarea {
   z-index: 10;
 }
 
-.fa-angle-left, .fa-angle-right {
-  color: #007bff;
-  font-size: 48px !important;
+blockquote p {
+  color: #404040;
 }
 
-blockquote p {
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 30px;
+  color: #404040;
+}
+
+.carousel-control-next-icon:after {
+  content: '>';
+  font-size: 30px;
   color: #404040;
 }
 
@@ -338,10 +371,6 @@ blockquote p {
 .contact {
   max-width: 50em;
 }
-
-.contact-details {
-  padding-left: 3.5rem;
-}
  
 .contact-details h6 {
   font-weight: 700;
@@ -364,10 +393,23 @@ blockquote p {
   border: 3px solid black !important;
 }
 
+.contact-details {
+  border: none;
+  margin-top: 3rem;
+}
+
+.connect .fa {
+  font-size: 1em !important;
+  line-height: 30px !important;
+  width: 30px;
+  height: 30px;
+}
+
 /*
  * MEDIA QUERIES
  */
 
+/* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   html {
     font-size: 16px;
@@ -378,4 +420,24 @@ blockquote p {
     font-weight: 300;
     line-height: 1.2;
   }
+}
+ 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .deserts, .drinks, .contact-details {
+    margin-top: 0;
+  }
+  .contact-details {
+    border-left: 1px solid rgba(0,0,0,.1);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
