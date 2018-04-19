@@ -38,12 +38,11 @@ input, textarea {
 }
 
 .fa {
-  font-size: 1.5em !important;
-  line-height: 48px !important;
+  font-size: 1em !important;
+  line-height: 30px !important;
   color: rgba(255, 255, 255, 0.8);
-  width: 48px;
-  height: 48px;
-  line-height: 48px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   transition: all 0.3s ease-in-out;
   background-color: #007bff;
@@ -398,12 +397,39 @@ blockquote p {
   margin-top: 3rem;
 }
 
-.connect .fa {
-  font-size: 1em !important;
-  line-height: 30px !important;
-  width: 30px;
-  height: 30px;
+/*
+ * FOOTER 
+ */
+
+footer {  
+  color: rgba(255,255,255,0.5) !important;
+  font-size: 0.75rem;
+  text-align: center;
 }
+
+.footer-title-h5 {
+  font-size: .75rem;
+  font-weight: 700;
+  color: rgba(255,255,255,1);
+}
+
+.border-left-custom {
+  border-left: none;
+}
+
+.copyright {
+  background: #364859;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .row {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 
 /*
  * MEDIA QUERIES
@@ -429,6 +455,23 @@ blockquote p {
   }
   .contact-details {
     border-left: 1px solid rgba(0,0,0,.1);
+  }
+  .border-left-custom {
+    border-left: 1px solid rgba(255,255,255,0.1) !important;
+  }
+  footer {
+    text-align: left;
+  }
+  .footer-title-h5::before {
+    content: '';
+    display: block;
+    width: 30px;
+    border-top: 3px solid #007bff;
+    margin-bottom: .5rem;
+  }
+  footer .row {
+    padding-left: initial;
+    padding-right: initial;
   }
 }
 
