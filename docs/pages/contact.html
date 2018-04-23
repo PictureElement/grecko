@@ -18,12 +18,12 @@
     <!-- Web icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
-  <body class="font-family-1">
+  <body>
     <header>
       <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg navbar-dark btn-primary fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <a class="navbar-brand animated bounce" href="../index.html">
-          <img src="../media/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="site logo">
+          <img src="../media/logo-header.svg" width="30" height="30" alt="site logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,37 +53,37 @@
               <a class="nav-link" href="reservations.html">Reservations</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Contact <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <form class="form-inline ml-auto">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
       </nav>
     </header>
     <main>
       <!-- DIRECTIONS -->
-      <div class="container directions">
-        <h2 class="special-title-1 text-center">DIRECTIONS</h2>
-        <h3 class="special-title-2 text-center">How to Get Here</h3>
-        <dl>
+      <div class="contact-directions container">
+        <h1 class="special-title-1">DIRECTIONS</h1>
+        <h2 class="special-title-2">How to Get Here</h2>
+        <dl class="mb-0">
           <dt>Direction from A</dt>
-          <dd class="mb-3">
+          <dd class="mb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis mauris at mauris varius tincidunt. Mauris fermentum finibus purus, non commodo metus pulvinar ac. Phasellus ultricies ultricies eros, quis rhoncus urna efficitur sed. Aenean id tellus ligula.
           </dd>
           <dt>Direction from B</dt>
-          <dd>
+          <dd class="mb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis mauris at mauris varius tincidunt. Mauris fermentum finibus purus, non commodo metus pulvinar ac. Phasellus ultricies ultricies eros, quis rhoncus urna efficitur sed. Aenean id tellus ligula.
           </dd>
         </dl>
       </div>
-      <hr>
+      <hr class="contact-horizontal-rule">
       <!-- CONTACT -->
-      <div class="container contact">
-        <h2 class="special-title-1 text-center">CONTACT</h2>
-        <h3 class="special-title-2 text-center">Leave Us Your Message</h3>
+      <div class="contact-information container">
+        <h1 class="special-title-1 text-center">CONTACT</h1>
+        <h2 class="special-title-2 text-center">Leave Us Your Message</h2>
         <div class="row">
           <div class="col-md-8 contact-form">
             <form>
@@ -122,34 +122,36 @@
               <p>Daily - from 12:00 to 23:00</p>
             </div>
             <div class="connect">
-              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-tripadvisor ml-3" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-instagram ml-3" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa-social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa-social fa fa-tripadvisor ml-3" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa-social fa fa-instagram ml-3" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
       </div>
+      
       <!-- GOOGLE MAP -->
-      <div id="map" class="map-contact google-map border border-dark border-right-0 border-left-0"></div>
+      <div id="map" class="google-map border-top border-bottom"></div>
+
     </main>
-    <footer class="bg-dark pt-5">
-      <div class="container mb-5">
-        <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="#">
-          <img src="../media/logo.svg" width="50" height="50" class="d-inline-block align-top" alt="site logo">
+    <footer class="page-footer bg-dark">
+      <div class="container">
+        <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="../index.html">
+          <img src="../media/logo-footer.svg" width="50" height="50" alt="site logo">
         </a>
-        <div class="row pt-md-5">
+        <div class="row">
           <div class="col-md-3">
-            <h5 class="footer-title-h5 pt-5 mb-3 pt-md-0">OPENING HOURS</h5>
+            <h5 class="page-footer-title">OPENING HOURS</h5>
             <span class="text-muted">BAR SERVICE</span>
             <p class="mb-0">Daily: Bookings from 9am</p> 
             <span class="text-muted">LUNCH SERVICE</span>
             <p class="mb-0">Daily: Bookings from 12pm</p>
             <span class="text-muted">DINNER SERVICE</span>
-            <p class="mb-0">Daily: Bookings from 6pm</p>
+            <p>Daily: Bookings from 6pm</p>
           </div>
           <div class="col-md-3 h-100 border-left-custom">
-            <h5 class="footer-title-h5 pt-5 mb-3 pt-md-0">LOCATION</h5>
-            <address class="mb-0">
+            <h5 class="page-footer-title mt-3 mt-md-0">LOCATION</h5>
+            <address>
               Grecko Bar &amp; Seafood Restaurant<br>
               1355 Market St, Suite 900<br>
               San Francisco, CA 94103<br>
@@ -158,28 +160,28 @@
             </address>
           </div>
           <div class="col-md-3 h-100 border-left-custom">
-            <h5 class="footer-title-h5 pt-5 mb-3 pt-md-0">FOLLOW US</h5>
-            <div class="mb-0">
-              <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-tripadvisor ml-4" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa fa-instagram ml-4" aria-hidden="true"></i></a>
+            <h5 class="page-footer-title mt-3 mt-md-0">FOLLOW US</h5>
+            <div class="mb-3">
+              <a href="#"><i class="fa-social fa fa-facebook" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa-social fa fa-tripadvisor ml-4" aria-hidden="true"></i></a>
+              <a href="#"><i class="fa-social fa fa-instagram ml-4" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="col-md-3 h-100 border-left-custom">
-            <h5 class="footer-title-h5 pt-5 mb-3 pt-md-0">NEWSLETTER</h5>
-            <p class="mx-auto mx-md-0">
+            <h5 class="page-footer-title mt-3 mt-md-0">NEWSLETTER</h5>
+            <p>
               Complete the form to receive information on the latest events,
               news and special offers at Grecko.
             </p>
             <form>
               <label class="sr-only" for="formEmail">Email</label>
               <input type="email" class="form-control form-control-sm rounded" id="formEmail" placeholder="name@example.com">
-              <button type="submit" class="btn btn-sm btn-primary mt-2">Submit</button>
+              <button type="submit" class="btn btn-sm btn-primary btn-block mt-2">Submit</button>
             </form>
           </div>
         </div>
       </div>
-      <div class="container-fluid copyright text-center py-4">
+      <div class="page-footer-copyright container-fluid text-center">
         © 2018 Grecko Restaurant. All rights reserved.<br>
         Design &amp; Development by <a href="https://pictureelement.github.io/portfolio-2/">PictureElement</a> (Marios Sofokleous).
       </div>
@@ -202,7 +204,7 @@
         );
         var uluru = {lat: 25.777302, lng: -80.186000};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
+          zoom: 12,
           center: uluru,
           mapTypeControlOptions: {
             mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'styled_map']
