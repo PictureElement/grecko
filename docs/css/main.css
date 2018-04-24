@@ -32,7 +32,7 @@ a, a:hover {
 
 .special-title-1 {
   margin-bottom: .5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #007bff;
 }
@@ -40,7 +40,7 @@ a, a:hover {
 .special-title-2 {
   font-family: 'Great Vibes', cursive;
   margin-bottom: 2rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
 }
 
 /*
@@ -107,6 +107,7 @@ a, a:hover {
 .brand-description {
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 /*
@@ -161,28 +162,17 @@ a, a:hover {
  */
 
 .homepage-testimonials {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
 }
 
-.homepage-testimonials .carousel-inner {
-  min-height: 520px; 
-}
-
-.homepage-testimonials .carousel-item {
-  overflow: hidden;
-  min-height: 520px;
-}
-
-.homepage-testimonials .carousel-caption {
-  padding: 0;
-  bottom: initial;
-  top: 50%;
-  transform: translateY(-50%);
+.homepage-testimonials-carousel {
+  max-width: 90%;
+  margin: 0 auto;
 }
 
 .homepage-testimonials blockquote {
-  margin-top: 2rem;
+  max-width: 75%;
+  margin: 2rem auto 0 auto;
 }
 
 .homepage-testimonials blockquote p {
@@ -303,12 +293,7 @@ a, a:hover {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about.jpg");
 }
 
-.about-jumbotron h1 {
-  font-size: 1.2rem;
-}
-
 .about-jumbotron h2 {
-  font-size: 2.4rem;
   margin-bottom: .5rem;
 }
 
@@ -346,14 +331,6 @@ a, a:hover {
   padding-top: 4rem;
   padding-bottom: 4rem;
   max-width: 50em;
-}
-
-.reservations-description h1 {
-  font-size: 1.2rem;
-}
-
-.reservations-description h2 {
-  font-size: 2.4rem;
 }
 
 .reservations-form {
@@ -433,6 +410,81 @@ a, a:hover {
 
 .contact-details h6 {
   font-weight: 700;
+}
+
+/*
+ * FOOD MENU
+ */
+
+.food-jumbotron {
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #777;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/food-menu.jpg");
+}
+
+.food-jumbotron h1 {
+  margin-bottom: 0;
+}
+
+.food-category {
+  padding-top: 4rem;
+}
+
+.food-category h2 {
+  margin-bottom: 2rem;
+}
+
+.food-item {
+  padding: 2rem 0;
+}
+
+.food-image {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.food-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.food-title:before {
+  position: absolute;
+  top: 7%;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  border-top: 2px dotted rgba(0,0,0,0.3);
+  display: block;
+  content: '';
+}
+
+.food-name {
+  position: relative;
+  padding-right: .5rem;
+  background: #fff;
+}
+
+.food-price {
+  position: relative;
+  padding-left: .5rem;
+  background: #fff;
+}
+
+.food-ingredients {
+  margin-bottom: 0;
+}
+
+.food-horizontal-rule {
+  margin: 0;
 }
 
 /* ANIMATIONS
@@ -534,6 +586,12 @@ a, a:hover {
   .page-footer .row {
     padding-left: initial;
     padding-right: initial;
+  }
+  .food-jumbotron h1 {
+    margin-bottom: 2rem;
+  }
+  .food-image {
+    margin-bottom: 0;
   }
 }
 
