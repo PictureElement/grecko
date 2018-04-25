@@ -43,6 +43,48 @@ a, a:hover {
   font-size: 2.4rem;
 }
 
+.banner {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 60px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 235px;
+  height: 60px;
+  border: 1px solid #006fe6;
+  text-align: center;
+  color: #fff;
+  background: #007bff;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset, 0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner::before, .banner::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -37px;
+  top: 24px;
+  display: block;
+  width: 60px;
+  height: 0px;
+  border: 30px solid #007bff;
+  border-right: 20px solid #0056b3;
+  border-bottom-color: #006fe6;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner::after {
+  left: auto;
+  right: -37px;
+  border-left: 20px solid #0056b3;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
 /*
  * NAVBAR
  */
