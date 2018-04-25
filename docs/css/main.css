@@ -429,8 +429,16 @@ a, a:hover {
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/food-menu.jpg");
 }
 
+.food-jumbotron .row {
+  max-width: 50em;
+}
+
 .food-jumbotron h1 {
   margin-bottom: 0;
+}
+
+.food-descriptions {
+  max-width: 50em;
 }
 
 .food-category {
@@ -458,24 +466,24 @@ a, a:hover {
 
 .food-title:before {
   position: absolute;
-  top: 7%;
+  top: 8px;
   left: 20px;
   right: 20px;
   height: 1px;
-  border-top: 2px dotted rgba(0,0,0,0.3);
+  border-top: 2px dotted rgba(0,0,0,0.5);
   display: block;
   content: '';
 }
 
 .food-name {
   position: relative;
-  padding-right: .5rem;
+  padding-right: 15px;
   background: #fff;
 }
 
 .food-price {
   position: relative;
-  padding-left: .5rem;
+  padding-left: 15px;
   background: #fff;
 }
 
@@ -484,6 +492,85 @@ a, a:hover {
 }
 
 .food-horizontal-rule {
+  margin: 0;
+}
+
+/*
+ * DRINKS MENU
+ */
+
+.drinks-jumbotron {
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #777;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/drinks-menu.jpg");
+}
+
+.drinks-jumbotron .row {
+  max-width: 50em;
+}
+
+.drinks-jumbotron h1 {
+  margin-bottom: 0;
+}
+
+.drinks-descriptions {
+  max-width: 50em;
+}
+
+.drink-category {
+  padding-top: 4rem;
+}
+
+.drink-category h2 {
+  margin-bottom: 2rem;
+}
+
+.drink-item {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.drink-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.drink-title:before {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  border-top: 2px dotted rgba(0,0,0,0.5);
+  display: block;
+  content: '';
+}
+
+.drink-name {
+  position: relative;
+  padding-right: 15px;
+  background: #fff;
+}
+
+.drink-price {
+  position: relative;
+  padding-left: 15px;
+  background: #fff;
+}
+
+.drink-ingredients {
+  margin-bottom: 0;
+}
+
+.drink-horizontal-rule {
   margin: 0;
 }
 
@@ -592,6 +679,9 @@ a, a:hover {
   }
   .food-image {
     margin-bottom: 0;
+  }
+  .drinks-jumbotron h1 {
+    margin-bottom: 2rem;
   }
 }
 
