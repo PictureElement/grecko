@@ -166,12 +166,12 @@ a, a:hover {
 }
 
 .homepage-testimonials-carousel {
-  max-width: 90%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
 .homepage-testimonials blockquote {
-  max-width: 75%;
+  max-width: 65%;
   margin: 2rem auto 0 auto;
 }
 
@@ -282,6 +282,7 @@ a, a:hover {
 }
 
 .about-jumbotron {
+  border-radius: 0;
   text-align: center;
   margin-top: 3.5rem;
   margin-bottom: 0;
@@ -417,6 +418,7 @@ a, a:hover {
  */
 
 .food-jumbotron {
+  border-radius: 0;
   text-align: center;
   margin-top: 3.5rem;
   margin-bottom: 0;
@@ -500,6 +502,7 @@ a, a:hover {
  */
 
 .drinks-jumbotron {
+  border-radius: 0;
   text-align: center;
   margin-top: 3.5rem;
   margin-bottom: 0;
