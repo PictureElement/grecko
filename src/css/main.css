@@ -660,7 +660,6 @@ a, a:hover {
 
 .desert-item {
   padding: 2rem 0;
-  position: relative;
 }
 
 .desert-image {
@@ -676,7 +675,7 @@ a, a:hover {
 
 .desert-title:before {
   position: absolute;
-  top: 40px;
+  top: 8px;
   left: 20px;
   right: 20px;
   height: 1px;
