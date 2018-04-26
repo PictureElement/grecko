@@ -32,7 +32,7 @@ a, a:hover {
 
 .special-title-1 {
   margin-bottom: .5rem;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 700;
   color: #007bff;
 }
@@ -40,11 +40,11 @@ a, a:hover {
 .special-title-2 {
   font-family: 'Great Vibes', cursive;
   margin-bottom: 2rem;
-  font-size: 2.4rem;
+  font-size: 38px;
 }
 
 .banner {
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 700;
   color: #fff;
   line-height: 60px;
@@ -204,7 +204,7 @@ a, a:hover {
  */
 
 .homepage-testimonials {
-  padding: 4rem 0;
+  padding: 4rem 15px;
 }
 
 .homepage-testimonials-carousel {
@@ -348,10 +348,11 @@ a, a:hover {
 .about-history-title h3, .about-job-openings-title h3 {
   margin-bottom: 1rem;
   color: #007bff;
+  font-size: 25px;
 }
 
 .about-history-title p, .about-job-openings-title p {
-  font-size: 2rem;
+  font-size: 25px;
 }
 
 .about-horizontal-rule {
@@ -619,6 +620,91 @@ a, a:hover {
   margin: 0;
 }
 
+/*
+ * DESERTS MENU
+ */
+
+.deserts-jumbotron {
+  border-radius: 0;
+  text-align: center;
+  margin-top: 3.5rem;
+  margin-bottom: 0;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #777;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/deserts-menu.jpg");
+}
+
+.deserts-jumbotron .row {
+  max-width: 50em;
+}
+
+.deserts-jumbotron h1 {
+  margin-bottom: 0;
+}
+
+.deserts-descriptions {
+  max-width: 50em;
+}
+
+.desert-category {
+  padding-top: 4rem;
+}
+
+.desert-category h2 {
+  margin-bottom: 2rem;
+}
+
+.desert-item {
+  padding: 2rem 0;
+  position: relative;
+}
+
+.desert-image {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.desert-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.desert-title:before {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  border-top: 2px dotted rgba(0,0,0,0.5);
+  display: block;
+  content: '';
+}
+
+.desert-name {
+  position: relative;
+  padding-right: 15px;
+  background: #fff;
+}
+
+.desert-price {
+  position: relative;
+  padding-left: 15px;
+  background: #fff;
+}
+
+.desert-ingredients {
+  margin-bottom: 0;
+}
+
+.desert-horizontal-rule {
+  margin: 0;
+}
+
 /* ANIMATIONS
 
 .deserts {
@@ -727,6 +813,21 @@ a, a:hover {
   }
   .drinks-jumbotron h1 {
     margin-bottom: 2rem;
+  }
+  .deserts-jumbotron h1 {
+    margin-bottom: 2rem;
+  }
+  .desert-image {
+    margin-bottom: 0;
+  }
+  .special-title-2 {
+    font-size: 64px;
+  }
+  .about-history-title h3, .about-job-openings-title h3 {
+    font-size: 35px;
+  }
+  .about-history-title p, .about-job-openings-title p {
+    font-size: 35px;
   }
 }
 
