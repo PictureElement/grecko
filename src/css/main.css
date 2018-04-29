@@ -119,22 +119,22 @@ a, a:hover {
 
 .slide-1 {
   margin-top: 3.5rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/1.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/covers/cover-homepage-1.jpg");
 }
 
 .slide-2 {
   margin-top: 3.5rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/2.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/covers/cover-homepage-2.jpg");
 }
 
 .slide-3 {
   margin-top: 3.5rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/3.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/covers/cover-homepage-3.jpg");
 }
 
 .slide-4 {
   margin-top: 3.5rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/4.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/covers/cover-homepage-4.jpg");
 }
 
 .cover .carousel-caption {
@@ -168,7 +168,7 @@ a, a:hover {
   margin-top: 2rem;
 }
 
-.homepage-deserts, .homepage-drinks {
+.homepage-desserts, .homepage-drinks {
   margin-top: 4rem;
 }
 
@@ -183,7 +183,7 @@ a, a:hover {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about-us.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/homepage/homepage-about.jpg");
 }
 
 .homepage-about-us-description {
@@ -337,7 +337,7 @@ a, a:hover {
   background-color: #777;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/about.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-about.jpg");
 }
 
 .about-jumbotron h2 {
@@ -388,7 +388,7 @@ a, a:hover {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/reservations.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-reservations.jpg");
 }
 
 .reservations-form ::placeholder {
@@ -475,7 +475,7 @@ a, a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/food-menu.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-food-menu.jpg");
 }
 
 .food-jumbotron .row {
@@ -559,7 +559,7 @@ a, a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/drinks-menu.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-drinks-menu.jpg");
 }
 
 .drinks-jumbotron .row {
@@ -625,10 +625,10 @@ a, a:hover {
 }
 
 /*
- * DESERTS MENU
+ * DESSERTS MENU
  */
 
-.deserts-jumbotron {
+.desserts-jumbotron {
   border-radius: 0;
   text-align: center;
   margin-top: 3.5rem;
@@ -639,45 +639,45 @@ a, a:hover {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/deserts-menu.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-desserts-menu.jpg");
 }
 
-.deserts-jumbotron .row {
+.desserts-jumbotron .row {
   max-width: 50em;
 }
 
-.deserts-jumbotron h1 {
+.desserts-jumbotron h1 {
   margin-bottom: 0;
 }
 
-.deserts-descriptions {
+.desserts-descriptions {
   max-width: 50em;
 }
 
-.desert-category {
+.dessert-category {
   padding-top: 4rem;
 }
 
-.desert-category h2 {
+.dessert-category h2 {
   margin-bottom: 2rem;
 }
 
-.desert-item {
+.dessert-item {
   padding: 2rem 0;
 }
 
-.desert-image {
+.dessert-image {
   margin-bottom: 2rem;
   text-align: center;
 }
 
-.desert-title {
+.dessert-title {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.desert-title:before {
+.dessert-title:before {
   position: absolute;
   top: 8px;
   left: 20px;
@@ -688,23 +688,23 @@ a, a:hover {
   content: '';
 }
 
-.desert-name {
+.dessert-name {
   position: relative;
   padding-right: 15px;
   background: #fff;
 }
 
-.desert-price {
+.dessert-price {
   position: relative;
   padding-left: 15px;
   background: #fff;
 }
 
-.desert-ingredients {
+.dessert-ingredients {
   margin-bottom: 0;
 }
 
-.desert-horizontal-rule {
+.dessert-horizontal-rule {
   margin: 0;
 }
 
@@ -790,7 +790,7 @@ a, a:hover {
 
 /* ANIMATIONS
 
-.deserts {
+.desserts {
   animation-delay: .25s;
   animation-duration: 3s;
   animation-iteration-count: 3;
@@ -865,7 +865,7 @@ a, a:hover {
  
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .deserts, .drinks, .contact-details {
+  .desserts, .drinks, .contact-details {
     margin-top: 0;
   }
   .contact-details {
@@ -897,10 +897,10 @@ a, a:hover {
   .drinks-jumbotron h1 {
     margin-bottom: 2rem;
   }
-  .deserts-jumbotron h1 {
+  .desserts-jumbotron h1 {
     margin-bottom: 2rem;
   }
-  .desert-image {
+  .dessert-image {
     margin-bottom: 0;
   }
   .special-title-2 {
