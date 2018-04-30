@@ -28,10 +28,10 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="../index.html">Home</a>
+              <a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="food.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,13 +53,15 @@
               <a class="nav-link" href="reservations.html">Reservations</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <form class="form-inline ml-auto">
-            <input class="form-control mr-sm-2 rounded" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-          </form>
+          <div class="ml-auto py-2">
+            <a class="d-inline-block border-right px-4 text-center" href="#"><i class="fa-social-nav fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="d-inline-block border-right px-4" href="#"><i class="fa-social-nav fa fa-tripadvisor" aria-hidden="true"></i></a>
+            <a class="d-inline-block border-right px-4" href="#"><i class="fa-social-nav fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="d-inline-block px-4" href="#"><i class="fa-social-nav fa fa-envelope" aria-hidden="true"></i></a>
+          </div>
         </div>
       </nav>
     </header>
@@ -69,11 +71,11 @@
         <h1 class="special-title-1">DIRECTIONS</h1>
         <h2 class="special-title-2">How to Get Here</h2>
         <dl class="mb-0">
-          <dt>Direction from A</dt>
+          <dt>Directions from A</dt>
           <dd class="mb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis mauris at mauris varius tincidunt. Mauris fermentum finibus purus, non commodo metus pulvinar ac. Phasellus ultricies ultricies eros, quis rhoncus urna efficitur sed. Aenean id tellus ligula.
           </dd>
-          <dt>Direction from B</dt>
+          <dt>Directions from B</dt>
           <dd class="mb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis mauris at mauris varius tincidunt. Mauris fermentum finibus purus, non commodo metus pulvinar ac. Phasellus ultricies ultricies eros, quis rhoncus urna efficitur sed. Aenean id tellus ligula.
           </dd>
@@ -85,7 +87,7 @@
         <h1 class="special-title-1 text-center">CONTACT</h1>
         <h2 class="special-title-2 text-center">Leave Your Message</h2>
         <div class="row">
-          <div class="col-md-8 contact-form">
+          <div class="col-md-7 contact-form">
             <form>
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -104,11 +106,11 @@
               <button type="submit" class="btn btn-primary">SUBMIT</button>
             </form>
           </div>
-          <div class="contact-details col-md-4">
+          <div class="contact-details col-md-5">
             <div class="address">
-              <h6>ADDRESS:</h6>
+              <h6>ADDRESS</h6>
               <address>
-                Grecko Bar &amp; Seafood Restaurant<br>
+                Grecko Bar &amp; Restaurant<br>
                 1355 Market St, Suite 900<br>
                 San Francisco, CA 94103<br>
                 <abbr title="Phone">P:</abbr> (123) 456-7890<br>
@@ -116,10 +118,12 @@
               </address>
             </div>
             <div class="opening-hours">
-              <h6>BAR:</h6>
-              <p>Daily - from 09:00 to 01:00</p>
-              <h6>LUNCH &amp; DINNER:</h6>
-              <p>Daily - from 12:00 to 23:00</p>
+              <h6>BAR SERVICE</h6>
+              <p>Daily: Bookings from 9am - 11pm</p>
+              <h6>LUNCH SERVICE</h6>
+              <p>Daily: Bookings from 12pm - 1.30pm</p>
+              <h6>DINNER SERVICE</h6>
+              <p>Daily: Bookings from 6pm - 9.30pm</p>
             </div>
             <div class="connect">
               <a href="#"><i class="fa-social fa fa-facebook" aria-hidden="true"></i></a>
@@ -143,11 +147,11 @@
           <div class="col-md-3">
             <h5 class="page-footer-title">OPENING HOURS</h5>
             <span class="text-muted">BAR SERVICE</span>
-            <p class="mb-0">Daily: Bookings from 9am</p> 
+            <p class="mb-0">Daily: Bookings from 9am - 11pm</p> 
             <span class="text-muted">LUNCH SERVICE</span>
-            <p class="mb-0">Daily: Bookings from 12pm</p>
+            <p class="mb-0">Daily: Bookings from 12pm - 1.30pm</p>
             <span class="text-muted">DINNER SERVICE</span>
-            <p>Daily: Bookings from 6pm</p>
+            <p>Daily: Bookings from 6pm - 9.30pm</p>
           </div>
           <div class="col-md-3 h-100 border-left-custom">
             <h5 class="page-footer-title mt-3 mt-md-0">LOCATION</h5>
