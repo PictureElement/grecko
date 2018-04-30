@@ -46,11 +46,11 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="album.html">Album</a>
-            </li>
             <li class="nav-item active">
-              <a class="nav-link" href="reservations.html">Reservations <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="album.html">Album <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="reservations.html">Reservations</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
@@ -65,56 +65,55 @@
     </header>
     <main>
 
-      <!-- RESERVATIONS DESCRIPTION -->
-      <div class="reservations-description container">
-        <h1 class="special-title-1">RESERVATIONS</h1>
-        <h2 class="special-title-2">Book a Table</h2>
-        <p class="mb-0">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
-          consequat augue. Morbi condimentum interdum magna sit amet pulvinar. 
-          Vestibulum in dolor egestas, vestibulum quam sit amet, feugiat neque. 
-        </p>
+      <!-- GALLERY DESCRIPTION -->
+      <div class="gallery-description container-fluid">
+        <h1 class="special-title-1">LOCATION GALLERY</h1>
+        <h2 class="special-title-2">Explore Our Place</h2>
       </div>
 
-      <!-- RESERVATIONS FORM -->
-      <div class="container-fluid reservations-form">
-        <form>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputName">NAME:</label>
-              <input type="text" class="form-control" id="inputName" placeholder="John Smith">
+      <!-- LIGHTBOX -->
+      <div id="gallery-lightbox" class="gallery-lightbox text-right fixed-top"><label>✖</label></div>
+
+      <!-- GALLERY CONTENT -->
+      <div id="gallery-images" class="gallery-images bg-light">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-1.jpg" draggable="false" alt="Location">
             </div>
-            <div class="form-group col-md-6">
-              <label for="inputEmail">EMAIL:</label>
-              <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-2.jpg" draggable="false" alt="Location">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-3.jpg" draggable="false" alt="Location">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-4.jpg" draggable="false" alt="Location">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-5.jpg" draggable="false" alt="Location">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-6.jpg" draggable="false" alt="Location">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-7.jpg" draggable="false" alt="Location">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-8.jpg" draggable="false" alt="Location">
+            </div>
+            <div class="col-md-4">
+              <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-location-9.jpg" draggable="false" alt="Location">
             </div>
           </div>
-          <div class="form-row">
-            <div class="form-group col-md-5">
-              <label for="inputDate">DATE:</label>
-              <input type="date" class="form-control" id="inputDate">
-            </div>
-            <div class="form-group col-md-2">
-              <label for="inputNumber">PARTY OF:</label>
-              <input type="number" min="1" class="form-control" id="inputNumber" placeholder="1">
-            </div>
-            <div class="form-group col-md-5">
-              <label for="inputPhone">PHONE:</label>
-              <input type="tel" class="form-control" id="inputPhone" placeholder="99123456">
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="inputTextarea">MESSAGE:</label>
-            <textarea class="form-control" id="inputTextarea" rows="7" placeholder="Additional details"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">SUBMIT</button>
-        </form>
+        </div>
       </div>
 
       <!-- GOOGLE MAP -->
       <div id="map" class="google-map"></div>
 
     </main>
+
     <footer class="page-footer bg-dark">
       <div class="container">
         <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="../index.html">
@@ -167,8 +166,16 @@
         Design &amp; Development by <a href="https://pictureelement.github.io/portfolio-2/">PictureElement</a> (Marios Sofokleous).
       </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous">
+    </script>
+    <script 
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+      crossorigin="anonymous">
+    </script>
     <!-- Google map -->
     <script>
       function initMap() {
@@ -200,7 +207,33 @@
         map.setMapTypeId('styled_map');
       }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap"></script>
-    <script src="../js/animations.js"></script>
+    <!-- Lightbox -->
+    <script>
+      var lightbox = false;
+      $("#gallery-images img").click(function() {
+        if (lightbox === false) {
+          lightbox = true;
+          $("#gallery-lightbox").css("z-index", "1080");
+          $("#gallery-lightbox").fadeTo(1);
+          $(this).addClass("active-image");
+        }
+      });
+      $("#gallery-lightbox").click(function() {
+        if (lightbox === true) {
+          lightbox = false;
+          $("#gallery-lightbox").css("z-index", "-1");
+          $("#gallery-lightbox").fadeTo(0);
+          $("#gallery-images img").removeClass("active-image");
+        }
+      });
+    </script>
+    <script 
+      async 
+      defer 
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap">
+    </script>
+    <script 
+      src="../js/animations.js">
+    </script>
   </body>
 </html>
