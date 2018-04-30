@@ -293,6 +293,18 @@ a, a:hover {
  * SOCIAL ICONS
  */
 
+ .fa-social-nav {
+  font-size: 1em !important;
+  line-height: 30px !important;
+  color: rgba(0, 0, 0, .5);
+  transition: all 0.3s ease-in-out;
+}
+
+.fa-social-nav:hover, .fa-social:active { 
+  transform: scale(1.1) rotate(360deg);
+  color: rgba(0, 0, 0, .7);
+}
+
 .fa-social {
   font-size: 1em !important;
   line-height: 30px !important;
