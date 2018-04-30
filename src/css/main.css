@@ -34,7 +34,6 @@ a, a:hover {
   margin-bottom: .5rem;
   font-size: 18px;
   font-weight: 700;
-  color: #007bff;
 }
 
 .special-title-2 {
@@ -192,15 +191,22 @@ a, a:hover {
 }
 
 /* 
- * HONEPAGE-SPECIAL-OFFERS
+ * HONEPAGE-SPECIALS & EVENTS
  */
 
 .homepage-special-offers {
   padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .card-2, .card-3 {
   margin-top: 2rem;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
 }
 
 /* 
@@ -209,6 +215,8 @@ a, a:hover {
 
 .homepage-testimonials {
   padding: 4rem 15px;
+  background-color: #abb3ba;
+  color: #fff;
 }
 
 .homepage-testimonials-carousel {
@@ -222,19 +230,19 @@ a, a:hover {
 }
 
 .homepage-testimonials blockquote p {
-  color: #404040;
+  color: #fff;
 }
 
-.carousel-control-prev-icon:after {
-  content: '<';
-  font-size: 30px;
-  color: #404040;
+.homepage-testimonials blockquote footer {
+  color: #e6e6e6;
 }
 
-.carousel-control-next-icon:after {
-  content: '>';
-  font-size: 30px;
-  color: #404040;
+.homepage-testimonials blockquote footer a {
+  text-decoration: underline;
+}
+
+.homepage-testimonials blockquote footer a:hover {
+  text-decoration: none;
 }
 
 /* 
@@ -515,11 +523,11 @@ a, a:hover {
 
 .food-title:before {
   position: absolute;
-  top: 8px;
+  top: 12px;
   left: 20px;
   right: 20px;
   height: 1px;
-  border-top: 2px dotted rgba(0,0,0,0.5);
+  border-top: 2px dotted rgba(0,0,0,1);
   display: block;
   content: '';
 }
@@ -595,11 +603,11 @@ a, a:hover {
 
 .drink-title:before {
   position: absolute;
-  top: 40px;
+  top: 45px;
   left: 20px;
   right: 20px;
   height: 1px;
-  border-top: 2px dotted rgba(0,0,0,0.5);
+  border-top: 2px dotted rgba(0,0,0,1);
   display: block;
   content: '';
 }
@@ -679,11 +687,11 @@ a, a:hover {
 
 .dessert-title:before {
   position: absolute;
-  top: 8px;
+  top: 12px;
   left: 20px;
   right: 20px;
   height: 1px;
-  border-top: 2px dotted rgba(0,0,0,0.5);
+  border-top: 2px dotted rgba(0,0,0,1);
   display: block;
   content: '';
 }
