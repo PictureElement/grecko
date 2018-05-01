@@ -2,6 +2,10 @@
  * GLOBAL
  */
 
+html {
+  font-size: 1rem;
+}
+
 body {
   font-size: 1rem;
   color: #404040;
@@ -118,22 +122,22 @@ a, a:hover {
 
 .slide-1 {
   margin-top: 3.5rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/covers/cover-homepage-1.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-1.jpg");
 }
 
 .slide-2 {
   margin-top: 3.5rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/covers/cover-homepage-2.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-2.jpg");
 }
 
 .slide-3 {
   margin-top: 3.5rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/covers/cover-homepage-3.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-3.jpg");
 }
 
 .slide-4 {
   margin-top: 3.5rem;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../media/covers/cover-homepage-4.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-4.jpg");
 }
 
 .cover .carousel-caption {
@@ -144,15 +148,13 @@ a, a:hover {
 
 .brand-title {
   font-family: 'Poiret One', cursive;
-  letter-spacing: .5rem;
-  font-size: 3rem;
-  text-align: center;
+  letter-spacing: .75rem;
+  font-size: 2.5rem;
 }
 
 .brand-description {
   font-family: 'Poiret One', cursive;
   font-size: 1rem;
-  font-weight: bold;
 }
 
 /*
@@ -215,8 +217,12 @@ a, a:hover {
 
 .homepage-testimonials {
   padding: 4rem 15px;
-  background-color: #abb3ba;
   color: #fff;
+  background-color: #777;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-wooden-texture.jpg");
 }
 
 .homepage-testimonials-carousel {
@@ -451,6 +457,15 @@ a, a:hover {
   margin-bottom: 0;
 }
 
+.contact-information-wrapper {
+  color: white;
+  background-color: #777;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-wooden-texture.jpg");
+}
+
 .contact-information {
   max-width: 50em;
   margin-top: 0;
@@ -459,16 +474,16 @@ a, a:hover {
 }
 
 .contact-form ::placeholder {
-  color: #262626 !important;
+  color: rgba(255, 255, 255, .5) !important;
 }
 
 .contact-form label {
-  color: black;
+  color: #fff;
 }
 
 .contact-form input, .contact-form textarea {
   background: none !important;
-  border: 3px solid black !important;
+  border: 3px solid #fff !important;
 }
 
 .contact-details {
@@ -490,7 +505,7 @@ a, a:hover {
   margin-top: 3.5rem;
   margin-bottom: 0;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   background-color: #777;
   background-position: center;
   background-size: cover;
@@ -500,10 +515,15 @@ a, a:hover {
 
 .food-jumbotron .row {
   max-width: 50em;
+  margin-bottom: 2rem;
+}
+
+.menu-icon {
+  max-width: 45px; 
 }
 
 .food-jumbotron h1 {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .food-descriptions {
@@ -574,7 +594,7 @@ a, a:hover {
   margin-top: 3.5rem;
   margin-bottom: 0;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   background-color: #777;
   background-position: center;
   background-size: cover;
@@ -584,10 +604,11 @@ a, a:hover {
 
 .drinks-jumbotron .row {
   max-width: 50em;
+  margin-bottom: 2rem;
 }
 
 .drinks-jumbotron h1 {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .drinks-descriptions {
@@ -654,20 +675,21 @@ a, a:hover {
   margin-top: 3.5rem;
   margin-bottom: 0;
   padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   background-color: #777;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-desserts-menu.jpg");
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-desserts-menu.jpg");
 }
 
 .desserts-jumbotron .row {
   max-width: 50em;
+  margin-bottom: 2rem;
 }
 
 .desserts-jumbotron h1 {
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 
 .desserts-descriptions {
@@ -870,33 +892,57 @@ a, a:hover {
  * MEDIA QUERIES
  */
 
+@media (min-width: 425px) {
+  .brand-title {
+    font-size: 3.5rem;
+  }
+
+  .brand-description {
+    font-size: 1.4rem;
+  }
+}
+ 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
-  html {
-    font-size: 16px;
+  .brand-title {
+    font-size: 4.5rem;
   }
-  .cover h1 {
-    letter-spacing: 1rem;
-    font-size: 5.5rem;
-    font-weight: 300;
-    line-height: 1.2;
+
+  .brand-description {
+    font-size: 1.8rem;
   }
 }
  
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .homepage-desserts, .homepage-drinks {
+    margin-top: 0;
+  }
+
+  .card-2, .card-3 {
+    margin-top: 0;
+  }
+
   .desserts, .drinks, .contact-details {
     margin-top: 0;
   }
+
+  .menu-icon {
+    max-width: 60px; 
+  }
+
   .contact-details {
-    border-left: 1px solid rgba(0,0,0,.1);
+    border-left: 1px solid rgba(255, 255, 255, 1);
   }
+
   .border-left-custom {
-    border-left: 1px solid rgba(255,255,255,0.1) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
   }
+
   .page-footer {
     text-align: left;
   }
+
   .footer-title-h5::before {
     content: '';
     display: block;
@@ -904,31 +950,28 @@ a, a:hover {
     border-top: 3px solid #007bff;
     margin-bottom: .5rem;
   }
+
   .page-footer .row {
     padding-left: initial;
     padding-right: initial;
   }
-  .food-jumbotron h1 {
-    margin-bottom: 2rem;
-  }
+
   .food-image {
     margin-bottom: 0;
   }
-  .drinks-jumbotron h1 {
-    margin-bottom: 2rem;
-  }
-  .desserts-jumbotron h1 {
-    margin-bottom: 2rem;
-  }
+
   .dessert-image {
     margin-bottom: 0;
   }
+
   .special-title-2 {
     font-size: 64px;
   }
+
   .about-history-title h3, .about-job-openings-title h3 {
     font-size: 35px;
   }
+
   .about-history-title p, .about-job-openings-title p {
     font-size: 35px;
   }
@@ -936,10 +979,26 @@ a, a:hover {
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  .brand-title {
+    font-size: 5.5rem;
+  }
 
+  .brand-description {
+    font-size: 2.2rem;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
+}
+
+@media (min-width: 1440px) {
+  .brand-title {
+    font-size: 6.5rem;
+  }
+
+  .brand-description {
+    font-size: 2.6rem;
+  }
 }
