@@ -830,63 +830,11 @@ a, a:hover {
   margin: auto;
 }
 
-/* ANIMATIONS
-
-.desserts {
-  animation-delay: .25s;
-  animation-duration: 3s;
-  animation-iteration-count: 3;
+/* CSS ANIMATIONS */
+.navbar-brand.animated {
+  animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-
-.drinks {
-  animation-delay: .5s;
-}
-
-.about-us-animation h3 {
-  animation-delay: .25s;
-}
-
-.about-us-animation p {
-  animation-delay: .5s;
-}
-
-.about-us-animation a {
-  animation-delay: .75s;
-}
-
-.special-offers-animation h3 {
-  animation-delay: .25s;
-}
-
-#card-1 {
-  animation-delay: .5s;
-}
-
-#card-2 {
-  animation-delay: .75s;
-}
-
-#card-3 {
-  animation-delay: 1s;
-}
-
-.testimonials-animation h3 {
-  animation-delay: .25s;
-}
-
-.test-carousel {
-  animation-delay: .5s;
-}
-
-.reservations h3 {
-  animation-delay: .25s;
-}
-
-.reservations p {
-  animation-delay: .5s;
-}
-*/
 
 /*
  * MEDIA QUERIES

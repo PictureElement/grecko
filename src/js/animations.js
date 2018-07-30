@@ -1,82 +1,105 @@
-/*
-$("#menu-animation").css("opacity", "0");
-$("#about-us-animation").css("opacity", "0");
-$("#delivery-animation").css("opacity", "0");
-$("#testimonials-animation").css("opacity", "0");
-*/
-$("#reservations-description").css("opacity", "0");
+var foodAnimation = document.querySelector('#food-animation');
+var dessertsAnimation = document.querySelector('#desserts-animation');
+var drinksAnimation = document.querySelector('#drinks-animation');
+var aboutTextAnimation  = document.querySelector('#about-text-animation');
+var aboutBtnAnimation = document.querySelector('#about-btn-animation');
+var card1Animation = document.querySelector('#card-1-animation');
+var card2Animation = document.querySelector('#card-2-animation');
+var card3Animation = document.querySelector('#card-3-animation');
+foodAnimation.style.opacity = "0";
+dessertsAnimation.style.opacity = "0";
+drinksAnimation.style.opacity = "0";
+aboutTextAnimation.style.opacity = "0";
+aboutBtnAnimation.style.opacity = "0";
+card1Animation.style.opacity = "0";
+card2Animation.style.opacity = "0";
+card3Animation.style.opacity = "0";
 
 var options = {
   rootMargin: '0px',
-  threshold: 0.5
+  threshold: 0.3
 }
 
-function callback (entries, observer) {
-    entries.forEach(function(entry) {
-      switch (entry.target.id) {
-        case "menu-animation":
-          if (entry.intersectionRatio > 0) {
-            $("#menu-animation").css("opacity", "1");
-            $("#food").addClass("animated fadeInUp");
-            $("#deserts").addClass("animated fadeInUp");
-            $("#drinks").addClass("animated fadeInUp");
-            // Stop observing target
-            observer.unobserve(entry.target);
-          }
-          break;
-        case "about-us-animation":
-          if (entry.intersectionRatio > 0) {
-            $("#about-us-animation").css("opacity", "1");
-            $("#about-us-animation h2").addClass("animated fadeInUp");
-            $("#about-us-animation h3").addClass("animated fadeInUp");
-            $("#about-us-animation p").addClass("animated fadeInUp");
-            $("#about-us-animation a").addClass("animated fadeInUp");
-            // Stop observing target
-            observer.unobserve(entry.target);
-          }
-          break;
-        case "delivery-animation":
-          if (entry.intersectionRatio > 0) {
-            $("#delivery-animation").css("opacity", "1");
-            $("#delivery-animation h2").addClass("animated fadeInUp");
-            $("#delivery-animation h3").addClass("animated fadeInUp");
-            $("#card-1").addClass("animated fadeInUp");
-            $("#card-2").addClass("animated fadeInUp");
-            $("#card-3").addClass("animated fadeInUp");
-            // Stop observing target
-            observer.unobserve(entry.target);
-          }
-          break;
-        case "testimonials-animation":
-          if (entry.intersectionRatio > 0) {
-            $("#testimonials-animation").css("opacity", "1");
-            $("#testimonials-animation h2").addClass("animated fadeInUp");
-            $("#testimonials-animation h3").addClass("animated fadeInUp");
-            $("#test-carousel").addClass("animated fadeInUp");
-            // Stop observing target
-            observer.unobserve(entry.target);
-          }
-          break;
-        case "reservations-description":
-          if (entry.intersectionRatio > 0) {
-            $("#reservations-description").css("opacity", "1");
-            $("#reservations-description h2").addClass("animated fadeInUp");
-            $("#reservations-description h3").addClass("animated fadeInUp");
-            $("#reservations-description p").addClass("animated fadeInUp");
-            // Stop observing target
-            observer.unobserve(entry.target);
-          }
-          break;
-      }
-    });
+function callback(entries, observer) {
+  entries.forEach(function(entry) {
+    switch (entry.target.id) {
+      case "food-animation":
+        if (entry.intersectionRatio > 0) {
+          foodAnimation.style.opacity = "1";
+          foodAnimation.className += " animated slideInLeft";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
+      case "desserts-animation":
+        if (entry.intersectionRatio > 0) {
+          dessertsAnimation.style.opacity = "1";
+          dessertsAnimation.className += " animated slideInUp";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
+      case "drinks-animation":
+        if (entry.intersectionRatio > 0) {
+          drinksAnimation.style.opacity = "1";
+          drinksAnimation.className += " animated slideInRight";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
+      case "about-text-animation":
+        if (entry.intersectionRatio > 0) {
+          aboutTextAnimation.style.opacity = "1";
+          aboutTextAnimation.className += " animated fadeInDown";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
+      case "about-btn-animation":
+        if (entry.intersectionRatio > 0) {
+          aboutBtnAnimation.style.opacity = "1";
+          aboutBtnAnimation.className += " animated fadeInUp";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
+      case "card-1-animation":
+        if (entry.intersectionRatio > 0) {
+          card1Animation.style.opacity = "1";
+          card1Animation.className += " animated slideInLeft";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
+      case "card-2-animation":
+        if (entry.intersectionRatio > 0) {
+          card2Animation.style.opacity = "1";
+          card2Animation.className += " animated slideInUp";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
+      case "card-3-animation":
+        if (entry.intersectionRatio > 0) {
+          card3Animation.style.opacity = "1";
+          card3Animation.className += " animated slideInRight";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
+    }
+  });
 }
 
+// Create an intersection observer
 var observer = new IntersectionObserver(callback, options);
 
-/*
-observer.observe(document.querySelector("#menu-animation"));
-observer.observe(document.querySelector("#about-us-animation"));
-observer.observe(document.querySelector("#delivery-animation"));
-observer.observe(document.querySelector("#testimonials-animation"));
-*/
-observer.observe(document.querySelector("#reservations-description"));
+// Start observing 
+observer.observe(foodAnimation);
+observer.observe(dessertsAnimation);
+observer.observe(drinksAnimation);
+observer.observe(aboutTextAnimation);
+observer.observe(aboutBtnAnimation);
+observer.observe(card1Animation);
+observer.observe(card2Animation);
+observer.observe(card3Animation);
