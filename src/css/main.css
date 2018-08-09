@@ -11,6 +11,7 @@ body {
   color: #404040;
   line-height: 1.75;
   font-family: 'Raleway', sans-serif;
+  padding-top: 62px;
 }
 
 label {
@@ -105,15 +106,15 @@ a, a:hover {
  */
 
 .cover {
-  height: 100vh;
+  height: calc(100vh - 62px);
 }
 
 .cover .carousel-inner {
-  height: 100vh;
+  height: calc(100vh - 62px);
 }
 
 .cover .carousel-item {
-  height: 100vh;
+  height: calc(100vh - 62px);
   background-color: #777;
   background-position: center center;
   background-size: cover;
@@ -121,22 +122,18 @@ a, a:hover {
 }
 
 .slide-1 {
-  margin-top: 3.5rem;
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-1.jpg");
 }
 
 .slide-2 {
-  margin-top: 3.5rem;
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-2.jpg");
 }
 
 .slide-3 {
-  margin-top: 3.5rem;
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-3.jpg");
 }
 
 .slide-4 {
-  margin-top: 3.5rem;
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-4.jpg");
 }
 
@@ -193,7 +190,7 @@ a, a:hover {
 }
 
 /* 
- * HONEPAGE-SPECIALS & EVENTS
+ * HOMEPAGE-SPECIALS & EVENTS
  */
 
 .homepage-special-offers {
@@ -332,42 +329,38 @@ a, a:hover {
 /* 
  * ABOUT
  */
-
-.fa-arrow-down {
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid #f8f9fa;
-  display: inline-block;
-  font-size: 1.5em !important;
-  line-height: 50px !important;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
-  border-radius: 50%;
-}
-
-.fa-arrow-down:hover, .fa-arrow-down:active { 
-  color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
-}
-
 .about-jumbotron {
-  border-radius: 0;
+  position: relative;
+  height: calc(100vh - 62px);
   text-align: center;
-  margin-top: 3.5rem;
-  margin-bottom: 0;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
   background-color: #777;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-about.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0;
 }
 
 .about-jumbotron h2 {
   margin-bottom: .5rem;
+}
+
+.about-arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 25px);
+}
+
+.about-arrow .fa-angle-down {
+  line-height: 50px;
+  font-size: 4em !important;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-history {
@@ -401,7 +394,6 @@ a, a:hover {
 
 .reservations-description {
   text-align: center;
-  margin-top: 3.5rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
   max-width: 50em;
@@ -442,7 +434,6 @@ a, a:hover {
 
 .contact-directions {
   text-align: center;
-  margin-top: 3.5rem;
   padding-top: 4rem;
   padding-bottom: 4rem;
   max-width: 50em;
@@ -502,7 +493,6 @@ a, a:hover {
 .food-jumbotron {
   border-radius: 0;
   text-align: center;
-  margin-top: 3.5rem;
   margin-bottom: 0;
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -591,7 +581,6 @@ a, a:hover {
 .drinks-jumbotron {
   border-radius: 0;
   text-align: center;
-  margin-top: 3.5rem;
   margin-bottom: 0;
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -672,7 +661,6 @@ a, a:hover {
 .desserts-jumbotron {
   border-radius: 0;
   text-align: center;
-  margin-top: 3.5rem;
   margin-bottom: 0;
   padding-top: 4rem;
   padding-bottom: 2rem;
@@ -755,7 +743,6 @@ a, a:hover {
  */
 
 .album-description {
-  margin-top: 3.5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   text-align: center;
@@ -779,7 +766,6 @@ a, a:hover {
  */
 
 .gallery-description {
-  margin-top: 3.5rem;
   padding-top: 5rem;
   padding-bottom: 5rem;
   text-align: center;
@@ -832,6 +818,11 @@ a, a:hover {
 
 /* CSS ANIMATIONS */
 .navbar-brand.animated {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.about-arrow.animated {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }

@@ -1,3 +1,4 @@
+/* Homepage */
 var foodAnimation = document.querySelector('#food-animation');
 var dessertsAnimation = document.querySelector('#desserts-animation');
 var drinksAnimation = document.querySelector('#drinks-animation');
