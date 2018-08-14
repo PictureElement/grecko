@@ -1,4 +1,4 @@
-/* Album page */
+/* Reservations page */
 var title1 = document.querySelector('#title-1');
 var title2 = document.querySelector('#title-2');
 var newsletterForm = document.querySelector('#newsletter-form');
