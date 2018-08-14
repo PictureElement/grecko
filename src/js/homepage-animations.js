@@ -27,7 +27,7 @@ function callback(entries, observer) {
       case "food-animation":
         if (entry.intersectionRatio > 0) {
           foodAnimation.style.opacity = "1";
-          foodAnimation.className += " animated slideInLeft";
+          foodAnimation.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
@@ -43,7 +43,7 @@ function callback(entries, observer) {
       case "drinks-animation":
         if (entry.intersectionRatio > 0) {
           drinksAnimation.style.opacity = "1";
-          drinksAnimation.className += " animated slideInRight";
+          drinksAnimation.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
@@ -67,7 +67,7 @@ function callback(entries, observer) {
       case "card-1-animation":
         if (entry.intersectionRatio > 0) {
           card1Animation.style.opacity = "1";
-          card1Animation.className += " animated slideInLeft";
+          card1Animation.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
@@ -83,7 +83,7 @@ function callback(entries, observer) {
       case "card-3-animation":
         if (entry.intersectionRatio > 0) {
           card3Animation.style.opacity = "1";
-          card3Animation.className += " animated slideInRight";
+          card3Animation.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }

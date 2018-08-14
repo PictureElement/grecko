@@ -22,7 +22,7 @@
     <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand animated bounce" href="../index.html">
+        <a class="navbar-brand animated pulse" href="../index.html">
           <img src="../media/brand/logo-dark.svg" width="30" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,15 +69,15 @@
 
       <!-- ALBUM DESCRIPTION -->
       <div class="album-description container-fluid bg-primary text-white">
-        <h1 class="special-title-1">ALBUM</h1>
-        <h2 class="special-title-2">Explore Our Galleries</h2>
+        <h1 id="title-1" class="special-title-1">ALBUM</h1>
+        <h2 id="title-2" class="special-title-2">Explore Our Galleries</h2>
       </div>
 
       <!-- ALBUM CONTENT -->
       <div class="album-content">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div id="card-food" class="col-md-4">
               <div class="card box-shadow">
                 <img class="card-img-top" src="../media/album/album-food@1x.jpg" srcset="../media/album/album-food@1x.jpg 1x, ../media/album/album-food@2x.jpg 2x, ../media/album/album-food@3x.jpg 3x, ../media/album/album-food@4x.jpg 4x" alt="Food image">
                 <div class="card-body">
@@ -90,7 +90,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div id="card-desserts" class="col-md-4">
               <div class="card box-shadow">
                 <img class="card-img-top" src="../media/album/album-desserts@1x.jpg" srcset="../media/album/album-desserts@1x.jpg 1x, ../media/album/album-desserts@2x.jpg 2x, ../media/album/album-desserts@3x.jpg 3x, ../media/album/album-desserts@4x.jpg 4x" alt="Dessert image">
                 <div class="card-body">
@@ -103,7 +103,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div id="card-drinks" class="col-md-4">
               <div class="card box-shadow">
                 <img class="card-img-top" src="../media/album/album-drinks@1x.jpg" srcset="../media/album/album-drinks@1x.jpg 1x, ../media/album/album-drinks@2x.jpg 2x, ../media/album/album-drinks@3x.jpg 3x, ../media/album/album-drinks@4x.jpg 4x" alt="Drink image">
                 <div class="card-body">
@@ -116,7 +116,9 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div id="card-location" class="col-md-4">
               <div class="card box-shadow">
                 <img class="card-img-top" src="../media/album/album-location@1x.jpg" srcset="../media/album/album-location@1x.jpg 1x, ../media/album/album-location@2x.jpg 2x, ../media/album/album-location@3x.jpg 3x, ../media/album/album-location@4x.jpg 4x" alt="Location image">
                 <div class="card-body">
@@ -129,7 +131,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div id="card-staff" class="col-md-4">
               <div class="card box-shadow">
                 <img class="card-img-top" src="../media/album/album-staff@1x.jpg" srcset="../media/album/album-staff@1x.jpg 1x, ../media/album/album-staff@2x.jpg 2x, ../media/album/album-staff@3x.jpg 3x, ../media/album/album-staff@4x.jpg 4x" alt="Staff image">
                 <div class="card-body">
@@ -153,7 +155,7 @@
 
     <footer class="page-footer bg-dark">
       <div class="container">
-        <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="../index.html">
+        <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="../index.html">
           <img src="../media/brand/logo-light.svg" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
@@ -237,6 +239,6 @@
       }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap"></script>
-    <script src="../js/animations.js"></script>
+    <script src="../js/album-animations.js"></script>
   </body>
 </html>
