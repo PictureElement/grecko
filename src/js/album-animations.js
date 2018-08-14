@@ -6,6 +6,7 @@ var cardDesserts = document.querySelector('#card-desserts');
 var cardDrinks = document.querySelector('#card-drinks');
 var cardLocation = document.querySelector('#card-location');
 var cardStaff = document.querySelector('#card-staff');
+var newsletterForm = document.querySelector('#newsletter-form');
 title1.style.opacity = "0";
 title2.style.opacity = "0";
 cardFood.style.opacity = "0";
@@ -13,6 +14,7 @@ cardDesserts.style.opacity = "0";
 cardDrinks.style.opacity = "0";
 cardLocation.style.opacity = "0";
 cardStaff.style.opacity = "0";
+newsletterForm.style.opacity = "0";
 
 var options = {
   rootMargin: '0px',
@@ -78,6 +80,14 @@ function callback(entries, observer) {
           observer.unobserve(entry.target);
         }
         break;
+      case "newsletter-form":
+        if (entry.intersectionRatio > 0) {
+          newsletterForm.style.opacity = "1";
+          newsletterForm.className += " animated fadeInUp";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
     }
   });
 }
@@ -93,3 +103,4 @@ observer.observe(cardDesserts);
 observer.observe(cardDrinks);
 observer.observe(cardLocation);
 observer.observe(cardStaff);
+observer.observe(newsletterForm);

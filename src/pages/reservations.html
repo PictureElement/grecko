@@ -23,7 +23,7 @@
       <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand animated bounce" href="../index.html">
+        <a class="navbar-brand animated pulse" href="../index.html">
           <img src="../media/brand/logo-dark.svg" width="30" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,8 +70,8 @@
 
       <!-- RESERVATIONS DESCRIPTION -->
       <div class="reservations-description container">
-        <h1 class="special-title-1">RESERVATIONS</h1>
-        <h2 class="special-title-2">Book a Table</h2>
+        <h1 id="title-1" class="special-title-1">RESERVATIONS</h1>
+        <h2 id="title-2" class="special-title-2">Book a Table</h2>
         <p class="mb-0">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et 
           consequat augue. Morbi condimentum interdum magna sit amet pulvinar. 
@@ -120,12 +120,12 @@
     </main>
     <footer class="page-footer bg-dark">
       <div class="container">
-        <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="../index.html">
+        <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="../index.html">
           <img src="../media/brand/logo-light.svg" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
           <div class="col-md-3">
-            <h5 class="page-footer-title">OPENING HOURS</h5>
+            <h5 id="footer-opening-hours" class="page-footer-title">OPENING HOURS</h5>
             <span class="text-muted">BAR SERVICE</span>
             <p class="mb-0">Daily: Bookings from 9am - 11pm</p> 
             <span class="text-muted">LUNCH SERVICE</span>
@@ -134,7 +134,7 @@
             <p>Daily: Bookings from 6pm - 9.30pm</p>
           </div>
           <div class="col-md-3 h-100 border-left-custom">
-            <h5 class="page-footer-title mt-3 mt-md-0">LOCATION</h5>
+            <h5 id="footer-location" class="page-footer-title mt-3 mt-md-0">LOCATION</h5>
             <address>
               Grecko Bar &amp; Restaurant<br>
               1355 Market St, Suite 900<br>
@@ -157,7 +157,7 @@
               Complete the form to receive information on the latest events,
               news and special offers at Grecko.
             </p>
-            <form>
+            <form id="newsletter-form">
               <label class="sr-only" for="formEmail">Email</label>
               <input type="email" class="form-control form-control-sm rounded" id="formEmail" placeholder="name@example.com">
               <button type="submit" class="btn btn-sm btn-primary btn-block mt-2">Submit</button>
@@ -204,6 +204,6 @@
       }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap"></script>
-    <script src="../js/animations.js"></script>
+    <script src="../js/reservations-animations.js"></script>
   </body>
 </html>

@@ -5,12 +5,14 @@ var historyTitle = document.querySelector('#history-title');
 var historyDescription = document.querySelector('#history-description');
 var jobTitle = document.querySelector('#job-title');
 var jobDescription = document.querySelector('#job-description');
+var newsletterForm = document.querySelector('#newsletter-form');
 title1.style.opacity = "0";
 title2.style.opacity = "0";
 historyTitle.style.opacity = "0";
 historyDescription.style.opacity = "0";
 jobTitle.style.opacity = "0";
 jobDescription.style.opacity = "0";
+newsletterForm.style.opacity = "0";
 
 var options = {
   rootMargin: '0px',
@@ -68,6 +70,14 @@ function callback(entries, observer) {
           observer.unobserve(entry.target);
         }
         break;
+      case "newsletter-form":
+        if (entry.intersectionRatio > 0) {
+          newsletterForm.style.opacity = "1";
+          newsletterForm.className += " animated fadeInUp";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
     }
   });
 }    
@@ -82,3 +92,4 @@ observer.observe(historyTitle);
 observer.observe(historyDescription);
 observer.observe(jobTitle);
 observer.observe(jobDescription);
+observer.observe(newsletterForm);

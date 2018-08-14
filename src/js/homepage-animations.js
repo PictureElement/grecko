@@ -7,6 +7,7 @@ var aboutBtnAnimation = document.querySelector('#about-btn-animation');
 var card1Animation = document.querySelector('#card-1-animation');
 var card2Animation = document.querySelector('#card-2-animation');
 var card3Animation = document.querySelector('#card-3-animation');
+var newsletterForm = document.querySelector('#newsletter-form');
 foodAnimation.style.opacity = "0";
 dessertsAnimation.style.opacity = "0";
 drinksAnimation.style.opacity = "0";
@@ -15,6 +16,7 @@ aboutBtnAnimation.style.opacity = "0";
 card1Animation.style.opacity = "0";
 card2Animation.style.opacity = "0";
 card3Animation.style.opacity = "0";
+newsletterForm.style.opacity = "0";
 
 var options = {
   rootMargin: '0px',
@@ -88,6 +90,14 @@ function callback(entries, observer) {
           observer.unobserve(entry.target);
         }
         break;
+      case "newsletter-form":
+        if (entry.intersectionRatio > 0) {
+          newsletterForm.style.opacity = "1";
+          newsletterForm.className += " animated fadeInUp";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
     }
   });
 }
@@ -104,3 +114,4 @@ observer.observe(aboutBtnAnimation);
 observer.observe(card1Animation);
 observer.observe(card2Animation);
 observer.observe(card3Animation);
+observer.observe(newsletterForm);
