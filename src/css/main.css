@@ -490,22 +490,20 @@ a, a:hover {
  * FOOD MENU
  */
 
-.food-jumbotron {
-  border-radius: 0;
+ .food-jumbotron {
+  position: relative;
+  height: calc(100vh - 62px);
   text-align: center;
-  margin-bottom: 0;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
   background-color: #777;
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-food-menu.jpg");
-}
-
-.food-jumbotron .row {
-  max-width: 50em;
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0;
 }
 
 .menu-icon {
@@ -514,10 +512,6 @@ a, a:hover {
 
 .food-jumbotron h1 {
   margin-bottom: 2rem;
-}
-
-.food-descriptions {
-  max-width: 50em;
 }
 
 .food-category {
@@ -578,22 +572,20 @@ a, a:hover {
  * DRINKS MENU
  */
 
-.drinks-jumbotron {
-  border-radius: 0;
+ .drinks-jumbotron {
+  position: relative;
+  height: calc(100vh - 62px);
   text-align: center;
-  margin-bottom: 0;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
   background-color: #777;
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-drinks-menu.jpg");
-}
-
-.drinks-jumbotron .row {
-  max-width: 50em;
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0;
 }
 
 .drinks-jumbotron h1 {
@@ -658,22 +650,20 @@ a, a:hover {
  * DESSERTS MENU
  */
 
-.desserts-jumbotron {
-  border-radius: 0;
+ .desserts-jumbotron {
+  position: relative;
+  height: calc(100vh - 62px);
   text-align: center;
-  margin-bottom: 0;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
   background-color: #777;
-  background-position: center;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-desserts-menu.jpg");
-}
-
-.desserts-jumbotron .row {
-  max-width: 50em;
-  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0;
 }
 
 .desserts-jumbotron h1 {

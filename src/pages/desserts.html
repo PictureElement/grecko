@@ -69,41 +69,43 @@
 
       <!-- DESSERTS: JUMBOTRON -->
       <div class="jumbotron desserts-jumbotron text-white">
-        <h1 class="special-title-2">Desserts menu</h1>
-        <div class="row mx-auto">
-          <div class="col-3">
-            <a href="#cakes"><img class="menu-icon" src="../media/menu/desserts/icons/cakes.svg" alt="Cakes"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">CAKES</h6>
+        <div class="container">
+          <h1 class="special-title-2">Desserts menu</h1>
+          <div class="row">
+            <div class="col-3">
+              <a href="#cakes"><img class="menu-icon" src="../media/menu/desserts/icons/cakes.svg" alt="Cakes"></a>
+              <h6 class="mt-3 mb-0 d-none d-sm-block">CAKES</h6>
+            </div>
+            <div class="col-3">
+              <a href="#cookies"><img class="menu-icon" src="../media/menu/desserts/icons/cookies.svg" alt="Cookies"></a>
+              <h6 class="mt-3 mb-0 d-none d-sm-block">COOKIES</h6>
+            </div>
+            <div class="col-3">
+              <a href="#flavours-of-cyprus-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/flavours-of-cyprus.svg" alt="Flavours of Cyprus"></a>
+              <h6 class="mt-3 mb-0 d-none d-sm-block">FLAVOURS OF CYPRUS</h6>
+            </div>  
+            <div class="col-3">
+              <a href="#frozen-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/frozen-desserts.svg" alt="Frozen desserts"></a>
+              <h6 class="mt-3 mb-0 d-none d-sm-block">FROZEN DESSERTS</h6>
+            </div>
           </div>
-          <div class="col-3">
-            <a href="#cookies"><img class="menu-icon" src="../media/menu/desserts/icons/cookies.svg" alt="Cookies"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">COOKIES</h6>
-          </div>
-          <div class="col-3">
-            <a href="#flavours-of-cyprus-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/flavours-of-cyprus.svg" alt="Flavours of Cyprus"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">FLAVOURS OF CYPRUS</h6>
-          </div>  
-          <div class="col-3">
-            <a href="#frozen-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/frozen-desserts.svg" alt="Frozen desserts"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">FROZEN DESSERTS</h6>
-          </div>
-        </div>
-        <div class="row mx-auto mt-md-4">
-          <div class="col-3">
-            <a href="#fruit-salads"><img class="menu-icon" src="../media/menu/desserts/icons/fruit-salads.svg" alt="Fruit salads"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">FRUIT SALADS</h6>
-          </div>  
-          <div class="col-3">
-            <a href="#gelatin-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/gelatin-desserts.svg" alt="Gelatin desserts"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">GELATIN DESSERTS</h6>
-          </div>
-          <div class="col-3">
-            <a href="#pastries"><img class="menu-icon" src="../media/menu/desserts/icons/pastries.svg" alt="Pastries"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">PASTRIES</h6>
-          </div>
-          <div class="col-3">
-            <a href="#puddings"><img class="menu-icon" src="../media/menu/desserts/icons/puddings.svg" alt="Puddings"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">PUDDINGS</h6>
+          <div class="row mt-5">
+            <div class="col-3">
+              <a href="#fruit-salads"><img class="menu-icon" src="../media/menu/desserts/icons/fruit-salads.svg" alt="Fruit salads"></a>
+              <h6 class="mt-3 mb-0 d-none d-sm-block">FRUIT SALADS</h6>
+            </div>  
+            <div class="col-3">
+              <a href="#gelatin-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/gelatin-desserts.svg" alt="Gelatin desserts"></a>
+              <h6 class="mt-3 mb-0 d-none d-sm-block">GELATIN DESSERTS</h6>
+            </div>
+            <div class="col-3">
+              <a href="#pastries"><img class="menu-icon" src="../media/menu/desserts/icons/pastries.svg" alt="Pastries"></a>
+              <h6 class="mt-3 mb-0 d-none d-sm-block">PASTRIES</h6>
+            </div>
+            <div class="col-3">
+              <a href="#puddings"><img class="menu-icon" src="../media/menu/desserts/icons/puddings.svg" alt="Puddings"></a>
+              <h6 class="mt-3 mb-0 d-none d-sm-block">PUDDINGS</h6>
+            </div>
           </div>
         </div>
       </div>
@@ -657,6 +659,18 @@
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
       }
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'start'
+          });
+        });
+      });
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap"></script>
     <script src="../js/animations.js"></script>
