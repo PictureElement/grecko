@@ -53,7 +53,7 @@ observer1.observe(title1);
 observer1.observe(menuIcons);
 
 /* ======= Observer #2 logic ======= */
-var foodItems = document.querySelectorAll('.food-item');
+var foodItems = document.querySelectorAll('.menu-item');
 
 foodItems.forEach(function(foodItem) {
   foodItem.style.opacity = "0";

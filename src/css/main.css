@@ -522,7 +522,7 @@ a, a:hover {
   margin-bottom: 2rem;
 }
 
-.food-item {
+.menu-item {
   padding: 2rem 0;
 }
 
@@ -604,11 +604,6 @@ a, a:hover {
   margin-bottom: 2rem;
 }
 
-.drink-item {
-  padding: 2rem 0;
-  position: relative;
-}
-
 .drink-title {
   font-size: 1rem;
   font-weight: 700;
@@ -680,10 +675,6 @@ a, a:hover {
 
 .dessert-category h2 {
   margin-bottom: 2rem;
-}
-
-.dessert-item {
-  padding: 2rem 0;
 }
 
 .dessert-image {
