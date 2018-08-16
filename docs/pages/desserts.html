@@ -22,7 +22,7 @@
     <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand animated bounce" href="../index.html">
+        <a class="navbar-brand animated pulse" href="../index.html">
           <img src="../media/brand/logo-dark.svg" width="30" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,41 +69,45 @@
 
       <!-- DESSERTS: JUMBOTRON -->
       <div class="jumbotron desserts-jumbotron text-white">
-        <h1 class="special-title-2">Desserts menu</h1>
-        <div class="row mx-auto">
-          <div class="col-3">
-            <a href="#cakes"><img class="menu-icon" src="../media/menu/desserts/icons/cakes.svg" alt="Cakes"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">CAKES</h6>
-          </div>
-          <div class="col-3">
-            <a href="#cookies"><img class="menu-icon" src="../media/menu/desserts/icons/cookies.svg" alt="Cookies"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">COOKIES</h6>
-          </div>
-          <div class="col-3">
-            <a href="#flavours-of-cyprus-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/flavours-of-cyprus.svg" alt="Flavours of Cyprus"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">FLAVOURS OF CYPRUS</h6>
-          </div>  
-          <div class="col-3">
-            <a href="#frozen-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/frozen-desserts.svg" alt="Frozen desserts"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">FROZEN DESSERTS</h6>
-          </div>
-        </div>
-        <div class="row mx-auto mt-md-4">
-          <div class="col-3">
-            <a href="#fruit-salads"><img class="menu-icon" src="../media/menu/desserts/icons/fruit-salads.svg" alt="Fruit salads"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">FRUIT SALADS</h6>
-          </div>  
-          <div class="col-3">
-            <a href="#gelatin-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/gelatin-desserts.svg" alt="Gelatin desserts"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">GELATIN DESSERTS</h6>
-          </div>
-          <div class="col-3">
-            <a href="#pastries"><img class="menu-icon" src="../media/menu/desserts/icons/pastries.svg" alt="Pastries"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">PASTRIES</h6>
-          </div>
-          <div class="col-3">
-            <a href="#puddings"><img class="menu-icon" src="../media/menu/desserts/icons/puddings.svg" alt="Puddings"></a>
-            <h6 class="mt-3 mb-0 d-none d-md-block">PUDDINGS</h6>
+        <div class="container">
+          <h1 id="title-1" class="special-title-2">Desserts menu</h1>
+          <div id="menu-icons">
+            <div class="row">
+              <div class="col-3">
+                <a href="#cakes"><img class="menu-icon" src="../media/menu/desserts/icons/cakes.svg" alt="Cakes"></a>
+                <h6 class="mt-3 mb-0 d-none d-sm-block">CAKES</h6>
+              </div>
+              <div class="col-3">
+                <a href="#cookies"><img class="menu-icon" src="../media/menu/desserts/icons/cookies.svg" alt="Cookies"></a>
+                <h6 class="mt-3 mb-0 d-none d-sm-block">COOKIES</h6>
+              </div>
+              <div class="col-3">
+                <a href="#flavours-of-cyprus-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/flavours-of-cyprus.svg" alt="Flavours of Cyprus"></a>
+                <h6 class="mt-3 mb-0 d-none d-sm-block">FLAVOURS OF CYPRUS</h6>
+              </div>  
+              <div class="col-3">
+                <a href="#frozen-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/frozen-desserts.svg" alt="Frozen desserts"></a>
+                <h6 class="mt-3 mb-0 d-none d-sm-block">FROZEN DESSERTS</h6>
+              </div>
+            </div>
+            <div class="row mt-5">
+              <div class="col-3">
+                <a href="#fruit-salads"><img class="menu-icon" src="../media/menu/desserts/icons/fruit-salads.svg" alt="Fruit salads"></a>
+                <h6 class="mt-3 mb-0 d-none d-sm-block">FRUIT SALADS</h6>
+              </div>  
+              <div class="col-3">
+                <a href="#gelatin-desserts"><img class="menu-icon" src="../media/menu/desserts/icons/gelatin-desserts.svg" alt="Gelatin desserts"></a>
+                <h6 class="mt-3 mb-0 d-none d-sm-block">GELATIN DESSERTS</h6>
+              </div>
+              <div class="col-3">
+                <a href="#pastries"><img class="menu-icon" src="../media/menu/desserts/icons/pastries.svg" alt="Pastries"></a>
+                <h6 class="mt-3 mb-0 d-none d-sm-block">PASTRIES</h6>
+              </div>
+              <div class="col-3">
+                <a href="#puddings"><img class="menu-icon" src="../media/menu/desserts/icons/puddings.svg" alt="Puddings"></a>
+                <h6 class="mt-3 mb-0 d-none d-sm-block">PUDDINGS</h6>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -115,7 +119,7 @@
         <div id="cakes" class="dessert-category">
           <h2 class="banner">CAKES</h2>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/cakes@1x.jpg" srcset="../media/menu/desserts/cakes@1x.jpg 1x, ../media/menu/desserts/cakes@2x.jpg 2x, ../media/menu/desserts/cakes@3x.jpg 3x" alt="Cake">
             </div>
@@ -132,7 +136,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/cakes@1x.jpg" srcset="../media/menu/desserts/cakes@1x.jpg 1x, ../media/menu/desserts/cakes@2x.jpg 2x, ../media/menu/desserts/cakes@3x.jpg 3x" alt="Cake">
             </div>
@@ -149,7 +153,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/cakes@1x.jpg" srcset="../media/menu/desserts/cakes@1x.jpg 1x, ../media/menu/desserts/cakes@2x.jpg 2x, ../media/menu/desserts/cakes@3x.jpg 3x" alt="Cake">
             </div>
@@ -172,7 +176,7 @@
         <div id="cookies" class="dessert-category">
           <h2 class="banner">COOKIES</h2>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/cookies@1x.jpg" srcset="../media/menu/desserts/cookies@1x.jpg 1x, ../media/menu/desserts/cookies@2x.jpg 2x, ../media/menu/desserts/cookies@3x.jpg 3x" alt="Cookie">
             </div>
@@ -189,7 +193,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/cookies@1x.jpg" srcset="../media/menu/desserts/cookies@1x.jpg 1x, ../media/menu/desserts/cookies@2x.jpg 2x, ../media/menu/desserts/cookies@3x.jpg 3x" alt="Cookie">
             </div>
@@ -206,7 +210,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/cookies@1x.jpg" srcset="../media/menu/desserts/cookies@1x.jpg 1x, ../media/menu/desserts/cookies@2x.jpg 2x, ../media/menu/desserts/cookies@3x.jpg 3x" alt="Cookie">
             </div>
@@ -229,7 +233,7 @@
         <div id="flavours-of-cyprus-desserts" class="dessert-category">
           <h2 class="banner">FLAVOURS OF CYPRUS</h2>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/flavours-of-cyprus@1x.jpg" srcset="../media/menu/desserts/flavours-of-cyprus@1x.jpg 1x, ../media/menu/desserts/flavours-of-cyprus@2x.jpg 2x, ../media/menu/desserts/flavours-of-cyprus@3x.jpg 3x" alt="Cypriot dessert">
             </div>
@@ -246,7 +250,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/flavours-of-cyprus@1x.jpg" srcset="../media/menu/desserts/flavours-of-cyprus@1x.jpg 1x, ../media/menu/desserts/flavours-of-cyprus@2x.jpg 2x, ../media/menu/desserts/flavours-of-cyprus@3x.jpg 3x" alt="Cypriot dessert">
             </div>
@@ -263,7 +267,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/flavours-of-cyprus@1x.jpg" srcset="../media/menu/desserts/flavours-of-cyprus@1x.jpg 1x, ../media/menu/desserts/flavours-of-cyprus@2x.jpg 2x, ../media/menu/desserts/flavours-of-cyprus@3x.jpg 3x" alt="Cypriot dessert">
             </div>
@@ -286,7 +290,7 @@
         <div id="frozen-desserts" class="dessert-category">
           <h2 class="banner">FROZEN DESSERTS</h2>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/frozen-desserts@1x.jpg" srcset="../media/menu/desserts/frozen-desserts@1x.jpg 1x, ../media/menu/desserts/frozen-desserts@2x.jpg 2x, ../media/menu/desserts/frozen-desserts@3x.jpg 3x" alt="Frozen dessert">
             </div>
@@ -303,7 +307,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/frozen-desserts@1x.jpg" srcset="../media/menu/desserts/frozen-desserts@1x.jpg 1x, ../media/menu/desserts/frozen-desserts@2x.jpg 2x, ../media/menu/desserts/frozen-desserts@3x.jpg 3x" alt="Frozen dessert">
             </div>
@@ -320,7 +324,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/frozen-desserts@1x.jpg" srcset="../media/menu/desserts/frozen-desserts@1x.jpg 1x, ../media/menu/desserts/frozen-desserts@2x.jpg 2x, ../media/menu/desserts/frozen-desserts@3x.jpg 3x" alt="Frozen dessert">
             </div>
@@ -343,7 +347,7 @@
         <div id="fruit-salads" class="dessert-category">
           <h2 class="banner">FRUIT SALADS</h2>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/fruit-salads@1x.jpg" srcset="../media/menu/desserts/fruit-salads@1x.jpg 1x, ../media/menu/desserts/fruit-salads@2x.jpg 2x, ../media/menu/desserts/fruit-salads@3x.jpg 3x" alt="Fruit salad">
             </div>
@@ -360,7 +364,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/fruit-salads@1x.jpg" srcset="../media/menu/desserts/fruit-salads@1x.jpg 1x, ../media/menu/desserts/fruit-salads@2x.jpg 2x, ../media/menu/desserts/fruit-salads@3x.jpg 3x" alt="Fruit salad">
             </div>
@@ -377,7 +381,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/fruit-salads@1x.jpg" srcset="../media/menu/desserts/fruit-salads@1x.jpg 1x, ../media/menu/desserts/fruit-salads@2x.jpg 2x, ../media/menu/desserts/fruit-salads@3x.jpg 3x" alt="Fruit salad">
             </div>
@@ -400,7 +404,7 @@
         <div id="gelatin-desserts" class="dessert-category">
           <h2 class="banner">GELATIN DESSERTS</h2>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/gelatin-desserts@1x.jpg" srcset="../media/menu/desserts/gelatin-desserts@1x.jpg 1x, ../media/menu/desserts/gelatin-desserts@2x.jpg 2x, ../media/menu/desserts/gelatin-desserts@3x.jpg 3x" alt="Gelatin dessert">
             </div>
@@ -417,7 +421,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/gelatin-desserts@1x.jpg" srcset="../media/menu/desserts/gelatin-desserts@1x.jpg 1x, ../media/menu/desserts/gelatin-desserts@2x.jpg 2x, ../media/menu/desserts/gelatin-desserts@3x.jpg 3x" alt="Gelatin dessert">
             </div>
@@ -434,7 +438,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/gelatin-desserts@1x.jpg" srcset="../media/menu/desserts/gelatin-desserts@1x.jpg 1x, ../media/menu/desserts/gelatin-desserts@2x.jpg 2x, ../media/menu/desserts/gelatin-desserts@3x.jpg 3x" alt="Gelatin dessert">
             </div>
@@ -457,7 +461,7 @@
         <div id="pastries" class="dessert-category">
           <h2 class="banner">PASTRIES</h2>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/pastries@1x.jpg" srcset="../media/menu/desserts/pastries@1x.jpg 1x, ../media/menu/desserts/pastries@2x.jpg 2x, ../media/menu/desserts/pastries@3x.jpg 3x" alt="Pastry">
             </div>
@@ -474,7 +478,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/pastries@1x.jpg" srcset="../media/menu/desserts/pastries@1x.jpg 1x, ../media/menu/desserts/pastries@2x.jpg 2x, ../media/menu/desserts/pastries@3x.jpg 3x" alt="Pastry">
             </div>
@@ -491,7 +495,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/pastries@1x.jpg" srcset="../media/menu/desserts/pastries@1x.jpg 1x, ../media/menu/desserts/pastries@2x.jpg 2x, ../media/menu/desserts/pastries@3x.jpg 3x" alt="Pastry">
             </div>
@@ -514,7 +518,7 @@
         <div id="puddings" class="dessert-category">
           <h2 class="banner">PUDDINGS</h2>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/puddings@1x.jpg" srcset="../media/menu/desserts/puddings@1x.jpg 1x, ../media/menu/desserts/puddings@2x.jpg 2x, ../media/menu/desserts/puddings@3x.jpg 3x" alt="Pudding">
             </div>
@@ -531,7 +535,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/puddings@1x.jpg" srcset="../media/menu/desserts/puddings@1x.jpg 1x, ../media/menu/desserts/puddings@2x.jpg 2x, ../media/menu/desserts/puddings@3x.jpg 3x" alt="Pudding">
             </div>
@@ -548,7 +552,7 @@
             </div>
           </div>
           <hr class="dessert-horizontal-rule">
-          <div class="row align-items-center dessert-item">
+          <div class="row align-items-center menu-item">
             <div class="col-md-3 dessert-image">
               <img class="rounded-circle" width="150" src="../media/menu/desserts/puddings@1x.jpg" srcset="../media/menu/desserts/puddings@1x.jpg 1x, ../media/menu/desserts/puddings@2x.jpg 2x, ../media/menu/desserts/puddings@3x.jpg 3x" alt="Pudding">
             </div>
@@ -575,7 +579,7 @@
     </main>
     <footer class="page-footer bg-dark">
       <div class="container">
-        <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="../index.html">
+        <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="../index.html">
           <img src="../media/brand/logo-light.svg" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
@@ -612,7 +616,7 @@
               Complete the form to receive information on the latest events,
               news and special offers at Grecko.
             </p>
-            <form>
+            <form id="newsletter-form">
               <label class="sr-only" for="formEmail">Email</label>
               <input type="email" class="form-control form-control-sm rounded" id="formEmail" placeholder="name@example.com">
               <button type="submit" class="btn btn-sm btn-primary btn-block mt-2">Submit</button>
@@ -657,8 +661,20 @@
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
       }
+
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'start'
+          });
+        });
+      });
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap"></script>
-    <script src="../js/animations.js"></script>
+    <script src="../js/menu-animations.js"></script>
   </body>
 </html>

@@ -22,7 +22,7 @@
     <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand animated bounce" href="../index.html">
+        <a class="navbar-brand animated pulse" href="../index.html">
           <img src="../media/brand/logo-dark.svg" width="30" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,9 +68,9 @@
     <main>
       <!-- DIRECTIONS -->
       <div class="contact-directions container">
-        <h1 class="special-title-1">DIRECTIONS</h1>
-        <h2 class="special-title-2">How to Get Here</h2>
-        <dl class="mb-0">
+        <h1 id="title-1-directions" class="special-title-1">DIRECTIONS</h1>
+        <h2 id="title-2-directions" class="special-title-2">How to Get Here</h2>
+        <dl id="description" class="mb-0">
           <dt>Directions from A</dt>
           <dd class="mb-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque mollis mauris at mauris varius tincidunt. Mauris fermentum finibus purus, non commodo metus pulvinar ac. Phasellus ultricies ultricies eros, quis rhoncus urna efficitur sed. Aenean id tellus ligula.
@@ -85,8 +85,8 @@
       <!-- CONTACT -->
       <div class="container-fluid contact-information-wrapper">
         <div class="contact-information container">
-          <h1 class="special-title-1 text-center">CONTACT</h1>
-          <h2 class="special-title-2 text-center">Leave Your Message</h2>
+          <h1 id="title-1-contact" class="special-title-1 text-center">CONTACT</h1>
+          <h2 id="title-2-contact" class="special-title-2 text-center">Leave Your Message</h2>
           <div class="row">
             <div class="col-md-7 contact-form">
               <form>
@@ -142,7 +142,7 @@
     </main>
     <footer class="page-footer bg-dark">
       <div class="container">
-        <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="../index.html">
+        <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="../index.html">
           <img src="../media/brand/logo-light.svg" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
@@ -179,7 +179,7 @@
               Complete the form to receive information on the latest events,
               news and special offers at Grecko.
             </p>
-            <form>
+            <form id="newsletter-form">
               <label class="sr-only" for="formEmail">Email</label>
               <input type="email" class="form-control form-control-sm rounded" id="formEmail" placeholder="name@example.com">
               <button type="submit" class="btn btn-sm btn-primary btn-block mt-2">Submit</button>
@@ -226,6 +226,6 @@
       }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap"></script>
-    <script src="../js/animations.js"></script>
+    <script src="../js/contact-animations.js"></script>
   </body>
 </html>

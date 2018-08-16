@@ -22,7 +22,7 @@
     <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand animated bounce" href="../index.html">
+        <a class="navbar-brand animated pulse" href="../index.html">
           <img src="../media/brand/logo-dark.svg" width="30" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,19 +65,19 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main class="about-main">
       <div class="jumbotron about-jumbotron text-white">
-        <h1 class="special-title-1">ABOUT US</h1>
-        <h2 class="special-title-2">Tradition &amp; Passion</h2>
-        <a href="#about-history"><i class="fa fa-arrow-down" aria-hidden="true"></i></a>
+        <h1 id="title-1" class="special-title-1">ABOUT US</h1>
+        <h2 id="title-2" class="special-title-2">Tradition &amp; Passion</h2>
+        <a class="about-arrow animated bounce" href="#about-history"><i class="fa fa-angle-down" aria-hidden="true"></i></a>
       </div>
       <div id="about-history" class="container about-history">
         <div class="row d-flex align-items-center">
-          <div class="col-md-4 about-history-title">
+          <div id="history-title" class="col-md-4 about-history-title">
             <h3 class="special-title-2">Our History</h3>
             <p>HOW WE'VE STARTED OUR RESTAURANT</p>
           </div>
-          <div class="col-md-8">
+          <div id="history-description" class="col-md-8">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta iaculis nulla, nec volutpat risus varius vitae. Vestibulum in semper lorem. Nunc nec augue quis felis sagittis maximus. Sed elementum ante non semper fermentum. Donec dui urna, faucibus consectetur ante id, condimentum fringilla arcu. Donec vitae accumsan justo, eget suscipit velit. Nam nec auctor felis. Sed molestie nisi massa, a vulputate nibh posuere vel. Donec non ipsum ornare, fringilla metus a, porttitor velit. In aliquet nec ligula ut semper. Maecenas ut justo lorem. Vestibulum cursus enim molestie purus posuere, id luctus eros condimentum.
             </p>
@@ -93,11 +93,11 @@
       <hr class="about-horizontal-rule">
       <div class="container about-job-openings">
         <div class="row d-flex align-items-center">
-          <div class="col-md-4 about-job-openings-title">
+          <div id="job-title" class="col-md-4 about-job-openings-title">
             <h3 class="special-title-2">Job Openings</h3>
             <p>WOULD YOU LIKE TO JOIN OUR TEAM?</p>
           </div>
-          <div class="col-md-8">
+          <div id="job-description" class="col-md-8">
             <div id="accordion">
               <div class="card">
                 <div class="card-header" id="headingOne">
@@ -209,7 +209,7 @@
 
     <footer class="page-footer bg-dark">
       <div class="container">
-        <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="../index.html">
+        <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="../index.html">
           <img src="../media/brand/logo-light.svg" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
@@ -246,7 +246,7 @@
               Complete the form to receive information on the latest events,
               news and special offers at Grecko.
             </p>
-            <form>
+            <form id="newsletter-form">
               <label class="sr-only" for="formEmail">Email</label>
               <input type="email" class="form-control form-control-sm rounded" id="formEmail" placeholder="name@example.com">
               <button type="submit" class="btn btn-sm btn-primary btn-block mt-2">Submit</button>
@@ -291,8 +291,20 @@
         map.mapTypes.set('styled_map', styledMapType);
         map.setMapTypeId('styled_map');
       }
+      
+      // Smooth scrolling
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+            inline: 'start'
+          });
+        });
+      });
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap"></script>
-    <script src="../js/animations.js"></script>
+    <script src="../js/about-animations.js"></script>
   </body>
 </html>
