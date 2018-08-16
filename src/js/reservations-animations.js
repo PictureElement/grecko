@@ -1,9 +1,11 @@
 /* Reservations page */
 var title1 = document.querySelector('#title-1');
 var title2 = document.querySelector('#title-2');
+var description = document.querySelector('#description');
 var newsletterForm = document.querySelector('#newsletter-form');
 title1.style.opacity = "0";
 title2.style.opacity = "0";
+description.style.opacity = "0";
 newsletterForm.style.opacity = "0";
 
 var options = {
@@ -30,6 +32,14 @@ function callback(entries, observer) {
           observer.unobserve(entry.target);
         }
         break;
+      case "description":
+        if (entry.intersectionRatio > 0) {
+          description.style.opacity = "1";
+          description.className += " animated fadeInUp";
+          // Stop observing target
+          observer.unobserve(entry.target);
+        }
+        break;
       case "newsletter-form":
         if (entry.intersectionRatio > 0) {
           newsletterForm.style.opacity = "1";
@@ -48,4 +58,5 @@ var observer = new IntersectionObserver(callback, options);
 // Start observing 
 observer.observe(title1);
 observer.observe(title2);
+observer.observe(description);
 observer.observe(newsletterForm);
