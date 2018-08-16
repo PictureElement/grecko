@@ -22,7 +22,7 @@
     <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand animated bounce" href="../index.html">
+        <a class="navbar-brand animated pulse" href="../index.html">
           <img src="../media/brand/logo-dark.svg" width="30" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,8 +69,8 @@
 
       <!-- GALLERY DESCRIPTION -->
       <div class="gallery-description container-fluid bg-dark text-white">
-        <h1 class="special-title-1">DRINKS GALLERY</h1>
-        <h2 class="special-title-2">Innovative &amp; Exciting Cocktails</h2>
+        <h1 id="title-1" class="special-title-1">DRINKS GALLERY</h1>
+        <h2 id="title-2" class="special-title-2">Innovative &amp; Exciting Cocktails</h2>
       </div>
 
       <!-- LIGHTBOX -->
@@ -80,31 +80,31 @@
       <div id="gallery-images" class="gallery-images bg-light">
         <div class="container">
           <div class="row">
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-1.jpg" draggable="false" alt="Drink">
             </div>
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-2.jpg" draggable="false" alt="Drink">
             </div>
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-3.jpg" draggable="false" alt="Drink">
             </div>
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-4.jpg" draggable="false" alt="Drink">
             </div>
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-5.jpg" draggable="false" alt="Drink">
             </div>
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-6.jpg" draggable="false" alt="Drink">
             </div>
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-7.jpg" draggable="false" alt="Drink">
             </div>
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-8.jpg" draggable="false" alt="Drink">
             </div>
-            <div class="col-md-4">
+            <div class="gallery-item col-md-4">
               <img class="img-fluid rounded box-shadow border" src="../media/galleries/gallery-drinks-9.jpg" draggable="false" alt="Drink">
             </div>
           </div>
@@ -118,7 +118,7 @@
 
     <footer class="page-footer bg-dark">
       <div class="container">
-        <a class="navbar-brand animated bounce d-block text-center m-0 p-0" href="../index.html">
+        <a class="navbar-brand animated pulse d-block text-center m-0 p-0" href="../index.html">
           <img src="../media/brand/logo-light.svg" width="50" height="50" alt="Logo">
         </a>
         <div class="row">
@@ -155,7 +155,7 @@
               Complete the form to receive information on the latest events,
               news and special offers at Grecko.
             </p>
-            <form>
+            <form id="newsletter-form">
               <label class="sr-only" for="formEmail">Email</label>
               <input type="email" class="form-control form-control-sm rounded" id="formEmail" placeholder="name@example.com">
               <button type="submit" class="btn btn-sm btn-primary btn-block mt-2">Submit</button>
@@ -235,7 +235,7 @@
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap">
     </script>
     <script 
-      src="../js/animations.js">
+      src="../js/gallery-animations.js">
     </script>
   </body>
 </html>

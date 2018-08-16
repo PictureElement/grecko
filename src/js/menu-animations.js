@@ -60,8 +60,8 @@ foodItems.forEach(function(foodItem) {
 });
 
 var options2 = {
-  rootMargin: '0px',
-  threshold: 0.5
+  rootMargin: '-75px',
+  threshold: 0.3
 }
 
 function callback2(entries, observer2) {

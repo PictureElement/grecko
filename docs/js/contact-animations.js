@@ -13,7 +13,7 @@ title2Contact.style.opacity = "0";
 newsletterForm.style.opacity = "0";
 
 var options = {
-  rootMargin: '-100px',
+  rootMargin: '-75px',
   threshold: 0.3
 }
 
