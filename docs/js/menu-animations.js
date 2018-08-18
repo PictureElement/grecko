@@ -1,4 +1,4 @@
-/* Food page */
+/* Food, Desserts and Drinks pages */
 
 /* ======= Observer #1 logic ======= */
 var newsletterForm = document.querySelector('#newsletter-form');
@@ -10,7 +10,7 @@ menuIcons.style.opacity = "0";
 
 var options1 = {
   rootMargin: '0px',
-  threshold: 0.3
+  threshold: 0.6
 }
 
 function callback1(entries, observer1) {
@@ -60,8 +60,8 @@ foodItems.forEach(function(foodItem) {
 });
 
 var options2 = {
-  rootMargin: '-75px',
-  threshold: 0.3
+  rootMargin: '0px',
+  threshold: 0.6
 }
 
 function callback2(entries, observer2) {

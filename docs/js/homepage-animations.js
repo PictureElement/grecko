@@ -1,91 +1,81 @@
 /* Homepage */
-var foodAnimation = document.querySelector('#food-animation');
-var dessertsAnimation = document.querySelector('#desserts-animation');
-var drinksAnimation = document.querySelector('#drinks-animation');
-var aboutTextAnimation  = document.querySelector('#about-text-animation');
-var aboutBtnAnimation = document.querySelector('#about-btn-animation');
-var card1Animation = document.querySelector('#card-1-animation');
-var card2Animation = document.querySelector('#card-2-animation');
-var card3Animation = document.querySelector('#card-3-animation');
+var food = document.querySelector('#food');
+var desserts = document.querySelector('#desserts');
+var drinks = document.querySelector('#drinks');
+var aboutDescription  = document.querySelector('#about-description');
+var card1 = document.querySelector('#card-1');
+var card2 = document.querySelector('#card-2');
+var card3 = document.querySelector('#card-3');
 var newsletterForm = document.querySelector('#newsletter-form');
-foodAnimation.style.opacity = "0";
-dessertsAnimation.style.opacity = "0";
-drinksAnimation.style.opacity = "0";
-aboutTextAnimation.style.opacity = "0";
-aboutBtnAnimation.style.opacity = "0";
-card1Animation.style.opacity = "0";
-card2Animation.style.opacity = "0";
-card3Animation.style.opacity = "0";
+food.style.opacity = "0";
+desserts.style.opacity = "0";
+drinks.style.opacity = "0";
+aboutDescription.style.opacity = "0";
+card1.style.opacity = "0";
+card2.style.opacity = "0";
+card3.style.opacity = "0";
 newsletterForm.style.opacity = "0";
 
 var options = {
   rootMargin: '0px',
-  threshold: 0.3
+  threshold: 0.6
 }
 
 function callback(entries, observer) {
   entries.forEach(function(entry) {
     switch (entry.target.id) {
-      case "food-animation":
+      case "food":
         if (entry.intersectionRatio > 0) {
-          foodAnimation.style.opacity = "1";
-          foodAnimation.className += " animated slideInUp";
+          food.style.opacity = "1";
+          food.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
         break;
-      case "desserts-animation":
+      case "desserts":
         if (entry.intersectionRatio > 0) {
-          dessertsAnimation.style.opacity = "1";
-          dessertsAnimation.className += " animated slideInUp";
+          desserts.style.opacity = "1";
+          desserts.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
         break;
-      case "drinks-animation":
+      case "drinks":
         if (entry.intersectionRatio > 0) {
-          drinksAnimation.style.opacity = "1";
-          drinksAnimation.className += " animated slideInUp";
+          drinks.style.opacity = "1";
+          drinks.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
         break;
-      case "about-text-animation":
+      case "about-description":
         if (entry.intersectionRatio > 0) {
-          aboutTextAnimation.style.opacity = "1";
-          aboutTextAnimation.className += " animated fadeInDown";
+          aboutDescription.style.opacity = "1";
+          aboutDescription.className += " animated fadeInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
         break;
-      case "about-btn-animation":
+      case "card-1":
         if (entry.intersectionRatio > 0) {
-          aboutBtnAnimation.style.opacity = "1";
-          aboutBtnAnimation.className += " animated fadeInUp";
+          card1.style.opacity = "1";
+          card1.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
         break;
-      case "card-1-animation":
+      case "card-2":
         if (entry.intersectionRatio > 0) {
-          card1Animation.style.opacity = "1";
-          card1Animation.className += " animated slideInUp";
+          card2.style.opacity = "1";
+          card2.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
         break;
-      case "card-2-animation":
+      case "card-3":
         if (entry.intersectionRatio > 0) {
-          card2Animation.style.opacity = "1";
-          card2Animation.className += " animated slideInUp";
-          // Stop observing target
-          observer.unobserve(entry.target);
-        }
-        break;
-      case "card-3-animation":
-        if (entry.intersectionRatio > 0) {
-          card3Animation.style.opacity = "1";
-          card3Animation.className += " animated slideInUp";
+          card3.style.opacity = "1";
+          card3.className += " animated slideInUp";
           // Stop observing target
           observer.unobserve(entry.target);
         }
@@ -106,12 +96,11 @@ function callback(entries, observer) {
 var observer = new IntersectionObserver(callback, options);
 
 // Start observing 
-observer.observe(foodAnimation);
-observer.observe(dessertsAnimation);
-observer.observe(drinksAnimation);
-observer.observe(aboutTextAnimation);
-observer.observe(aboutBtnAnimation);
-observer.observe(card1Animation);
-observer.observe(card2Animation);
-observer.observe(card3Animation);
+observer.observe(food);
+observer.observe(desserts);
+observer.observe(drinks);
+observer.observe(aboutDescription);
+observer.observe(card1);
+observer.observe(card2);
+observer.observe(card3);
 observer.observe(newsletterForm);
