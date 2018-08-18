@@ -53,9 +53,9 @@ observer1.observe(title1);
 observer1.observe(menuIcons);
 
 /* ======= Observer #2 logic ======= */
-var foodItems = document.querySelectorAll('.menu-item');
+var menuItems = document.querySelectorAll('.menu-item');
 
-foodItems.forEach(function(foodItem) {
+menuItems.forEach(function(foodItem) {
   foodItem.style.opacity = "0";
 });
 
@@ -79,7 +79,7 @@ function callback2(entries, observer2) {
 var observer2 = new IntersectionObserver(callback2, options2);
 
 // Start observing
-foodItems.forEach(foodItem => {
+menuItems.forEach(foodItem => {
   observer2.observe(foodItem);
 });
 
