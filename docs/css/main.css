@@ -759,44 +759,44 @@ a, a:hover {
   margin-bottom: 0;
 }
 
-.gallery-lightbox {
-  opacity: 1;
-  z-index: -1;
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1100;
+  left: 0;
+  top: 0;
   height: 100vh;
   width: 100%;
   background: black;
   color: grey;
 }
 
-.gallery-lightbox label {
-  margin-bottom: 0;
-  margin-right: 20px;
+.lightbox label {
+  position: absolute;
   cursor: pointer;
+  top: 10px;
+  right: 25px;
   font-size: 3rem;
 }
 
-.gallery-images {
+.lightbox-content {
+  max-width: 800px;
+  width: 90%;
+  /* Horizontal & Vertical Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-thumbnails {
   padding-top: 4rem;
   padding-bottom: 2rem;
 }
 
-.gallery-images .col-md-4 {
+.gallery-thumbnails .col-md-4 {
   margin-bottom: 2rem;
-}
-
-.gallery-images img {
-  cursor: pointer;
-}
-
-.active-image {
-  position: fixed;
-  z-index: 1090;
-  width: 80%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
 }
 
 /* CSS ANIMATIONS */
