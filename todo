@@ -1,4 +1,4 @@
-back to top
+1. back to top
 
 360 x 640 Galaxy J7
 411 x 731 Google Pixel, Google Pixel XL
@@ -10,15 +10,3 @@ back to top
 412 x 846 
 360 x 740 S9, S9+, S8, S8+
 414 x 846 Note 8
-
-Target: 320 x 850
-
-.food-jumbotron h1 {
-    margin-bottom: 1.5rem;
-    font-size: 32px;
-}
-
-.menu-icon {
-    max-width: 30px;
-}
-
