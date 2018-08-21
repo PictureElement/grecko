@@ -178,6 +178,7 @@ a, a:hover {
 .homepage-about-us {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  position: relative;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -214,6 +215,7 @@ a, a:hover {
  */
 
 .homepage-testimonials {
+  position: relative;
   padding: 4rem 15px;
   color: #fff;
   background-color: #777;
@@ -776,12 +778,12 @@ a, a:hover {
   cursor: pointer;
   top: 10px;
   right: 25px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .lightbox-content {
   max-width: 800px;
-  width: 90%;
+  width: 80%;
   /* Horizontal & Vertical Centering */
   position: absolute;
   top: 50%;
