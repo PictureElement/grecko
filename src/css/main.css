@@ -178,6 +178,7 @@ a, a:hover {
 .homepage-about-us {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  position: relative;
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
@@ -214,6 +215,7 @@ a, a:hover {
  */
 
 .homepage-testimonials {
+  position: relative;
   padding: 4rem 15px;
   color: #fff;
   background-color: #777;
