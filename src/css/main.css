@@ -776,12 +776,12 @@ a, a:hover {
   cursor: pointer;
   top: 10px;
   right: 25px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .lightbox-content {
   max-width: 800px;
-  width: 90%;
+  width: 80%;
   /* Horizontal & Vertical Centering */
   position: absolute;
   top: 50%;
