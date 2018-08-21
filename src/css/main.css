@@ -513,6 +513,10 @@ a, a:hover {
   max-width: 45px; 
 }
 
+.menu-icon-text {
+  display: none;
+}
+
 .food-jumbotron h1 {
   margin-bottom: 2rem;
 }
@@ -826,12 +830,14 @@ a, a:hover {
   }
 }
  
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (phones, 576px and up) */
 @media (min-width: 576px) {
   .brand-title {
     font-size: 4.5rem;
   }
-
+  .menu-icon-text {
+    display: block;
+  }
   .brand-description {
     font-size: 1.8rem;
   }
@@ -924,5 +930,22 @@ a, a:hover {
 
   .brand-description {
     font-size: 2.6rem;
+  }
+}
+
+/* Phones - Landscape Mode */
+@media only screen and (min-width: 560px) and (max-width: 850px) and (orientation: landscape) { 
+  .food-jumbotron h1, .desserts-jumbotron h1, .drinks-jumbotron h1 {
+    margin-bottom: 1rem;
+    font-size: 25px;
+  }
+  .about-arrow {
+    display: none;
+  }
+  .menu-icon-text {
+    display: none;
+  }
+  .menu-icon {
+    max-width: 30px;
   }
 }

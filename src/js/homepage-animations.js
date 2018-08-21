@@ -18,7 +18,7 @@ newsletterForm.style.opacity = "0";
 
 var options = {
   rootMargin: '0px',
-  threshold: 0.6
+  threshold: 0.2
 }
 
 function callback(entries, observer) {
