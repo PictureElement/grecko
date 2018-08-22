@@ -52,24 +52,24 @@ module.exports = function(grunt) {
     critical: {
       t1: {
         options: {
-          base: './',
+          base: 'dist/',
           css: [
             'dist/css/purestyles.css'
           ],
-          width: 1920,
-          height: 1080
+          width: 1200,
+          height: 900
         },
         src: 'dist/index.html',
         dest: 'dist/index.html'
       },
       t2: {
         options: {
-          base: './',
+          base: 'dist/',
           css: [
             'dist/css/purestyles.css'
           ],
-          width: 1920,
-          height: 1080
+          width: 1200,
+          height: 900
         },
         src: 'dist/pages/*.html',
         dest: './'
