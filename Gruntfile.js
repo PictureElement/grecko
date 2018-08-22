@@ -72,7 +72,7 @@ module.exports = function(grunt) {
           height: 1080
         },
         src: 'dist/pages/*.html',
-        dest: 'dist/pages/'
+        dest: 'dist/'
       }
     },
 
