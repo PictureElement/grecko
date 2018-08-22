@@ -22,6 +22,7 @@ label {
 .google-map {
   height: 400px;
   width: 100%;
+  display: block;
 }
 
 input, textarea {

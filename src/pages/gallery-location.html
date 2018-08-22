@@ -171,7 +171,7 @@
       </div>
 
       <!-- GOOGLE MAP -->
-      <div id="map" class="google-map"></div>
+      <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29140.578077785987!2d-122.43953575153374!3d37.79529066762653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580ea69dcae83%3A0x3ef25abd292344d9!2sHouse+of+Prime+Rib!5e0!3m2!1sen!2s!4v1534971493602" frameborder="0" style="border:0" allowfullscreen></iframe>
 
     </main>
 
@@ -238,43 +238,6 @@
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
       crossorigin="anonymous">
-    </script>
-    <!-- Initialize and add the Google Map -->
-    <script>
-      function initMap() {
-        var styledMapType = new google.maps.StyledMapType(
-          [
-            {
-              featureType: "water",
-              elementType: "geometry",
-              "stylers": [
-                { "color": "#007bff" }
-              ]
-            }
-          ]
-        );
-        var uluru = {lat: 25.777302, lng: -80.186000};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: uluru,
-          mapTypeControlOptions: {
-            mapTypeIds: ['roadmap', 'satellite', 'hybrid', 'terrain', 'styled_map']
-          }
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-        //Associate the styled map with the MapTypeId and set it to display.
-        map.mapTypes.set('styled_map', styledMapType);
-        map.setMapTypeId('styled_map');
-      }
-    </script>
-    <!--Load Google Maps API -->
-    <script 
-      async 
-      defer 
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCooj32kgW0ngG8mW3fwa8ctJYhvJnEmug&callback=initMap">
     </script>
     <!-- Lightbox -->
     <script>
