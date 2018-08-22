@@ -3,7 +3,6 @@
 rm -r dist
 mkdir dist
 
-cp -r src/fonts dist/
 cp -r src/media dist/
 
 grunt purifycss
