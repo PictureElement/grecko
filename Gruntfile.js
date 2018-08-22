@@ -56,8 +56,8 @@ module.exports = function(grunt) {
           css: [
             'dist/css/purestyles.css'
           ],
-          width: 1200,
-          height: 900
+          width: 1920,
+          height: 1080
         },
         src: 'dist/index.html',
         dest: 'dist/index.html'
@@ -68,11 +68,11 @@ module.exports = function(grunt) {
           css: [
             'dist/css/purestyles.css'
           ],
-          width: 1200,
-          height: 900
+          width: 1920,
+          height: 1080
         },
         src: 'dist/pages/*.html',
-        dest: './'
+        dest: 'dist/pages/'
       }
     },
 
