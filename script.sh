@@ -18,4 +18,4 @@ perl -0pi -e 's/    <!-- Bootstrap -->\n    <link rel="stylesheet" href="css\/bo
  
 grunt critical
 
-#grunt htmlmin
+grunt htmlmin
