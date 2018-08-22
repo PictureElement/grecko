@@ -80,6 +80,6 @@ function callback2(entries, observer2) {
 var observer2 = new IntersectionObserver(callback2, options2);
 
 // Start observing
-galleryItems.forEach(galleryItem => {
+galleryItems.forEach(function(galleryItem) {
   observer2.observe(galleryItem);
 });
