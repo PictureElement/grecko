@@ -44,7 +44,7 @@ a, a:hover {
 }
 
 .special-title-2 {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Fredericka the Great', cursive;
   margin-bottom: 2rem;
   font-size: 38px;
 }
@@ -107,53 +107,43 @@ a, a:hover {
  * COVER
  */
 
-.cover {
+ .cover .carousel-item > img {
+  min-width: 100%;
   height: calc(100vh - 62px);
-}
-
-.cover .carousel-inner {
-  height: calc(100vh - 62px);
-}
-
-.cover .carousel-item {
-  height: calc(100vh - 62px);
-  background-color: #777;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.slide-1 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-1.jpg");
-}
-
-.slide-2 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-2.jpg");
-}
-
-.slide-3 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-3.jpg");
-}
-
-.slide-4 {
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-homepage-4.jpg");
+  object-fit: cover;
 }
 
 .cover .carousel-caption {
   bottom: initial;
   top: 50%;
   transform: translateY(-50%);
+  color: #fff;
+}
+
+.cover .carousel-caption > a {
+  border-radius: 0;
+}
+
+.dark-overlay::after {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: .3;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 .brand-title {
-  font-family: 'Poiret One', cursive;
-  letter-spacing: .75rem;
-  font-size: 2.5rem;
+  font-family: 'Fredericka the Great', cursive;
+  /* font size = min font size + (max font size - min font size) * (100vw - min viewport size) / (max viewport size - min viewport size) */
+  font-size: calc(50px + (120 - 50) * (100vw - 320px)/(2560 - 320));
 }
 
 .brand-description {
-  font-family: 'Poiret One', cursive;
-  font-size: 1rem;
+  /* font size = min font size + (max font size - min font size) * (100vw - min viewport size) / (max viewport size - min viewport size) */
+  font-size: calc(16px + (40 - 16) * (100vw - 320px)/(2560 - 320));
 }
 
 /*
@@ -821,26 +811,10 @@ a, a:hover {
  * MEDIA QUERIES
  */
 
-@media (min-width: 425px) {
-  .brand-title {
-    font-size: 3.5rem;
-  }
-
-  .brand-description {
-    font-size: 1.4rem;
-  }
-}
- 
 /* Small devices (phones, 576px and up) */
 @media (min-width: 576px) {
-  .brand-title {
-    font-size: 4.5rem;
-  }
   .menu-icon-text {
     display: block;
-  }
-  .brand-description {
-    font-size: 1.8rem;
   }
 }
  
@@ -905,32 +879,6 @@ a, a:hover {
 
   .about-history-title p, .about-job-openings-title p {
     font-size: 35px;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  .brand-title {
-    font-size: 5.5rem;
-  }
-
-  .brand-description {
-    font-size: 2.2rem;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
-
-@media (min-width: 1440px) {
-  .brand-title {
-    font-size: 6.5rem;
-  }
-
-  .brand-description {
-    font-size: 2.6rem;
   }
 }
 

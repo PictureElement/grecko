@@ -8,7 +8,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <!-- Animate.css -->
@@ -66,36 +66,58 @@
     <main>
 
       <!-- COVER -->
-      <div class="cover carousel slide" data-ride="carousel">
+      <div id="cover" class="cover carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#cover" data-slide-to="0" class="active"></li>
+          <li data-target="#cover" data-slide-to="1"></li>
+          <li data-target="#cover" data-slide-to="2"></li>
+          <li data-target="#cover" data-slide-to="3"></li>
+        </ol>
         <div class="carousel-inner">
-          <div class="carousel-item slide-1 active">
+          <div class="dark-overlay carousel-item active">
+            <img src="media/covers/cover-homepage-1.jpg" alt="First slide">
             <div class="carousel-caption">
-              <h1 class="brand-title animated fadeInDown">GRECKO</h1>
-              <p class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</p>
-              <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK ONLINE</a>
+              <h1 class="brand-title display-2 animated fadeInDown">GRECKO</h1>
+              <h4 class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</h4>
+              <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK NOW</a>
             </div>
           </div>
-          <div class="carousel-item slide-2">
+          <div class="dark-overlay carousel-item">
+            <img src="media/covers/cover-homepage-2.jpg" alt="Second slide">
             <div class="carousel-caption">
-              <h1 class="brand-title animated fadeInDown">GRECKO</h1>
-              <p class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</p>
-              <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK ONLINE</a>
+              <h1 class="brand-title display-2 animated fadeInDown">GRECKO</h1>
+              <h4 class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</h4>
+              <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK NOW</a>
             </div>
           </div>
-          <div class="carousel-item slide-3">
-            <div class="carousel-caption">
-              <h1 class="brand-title animated fadeInDown">GRECKO</h1>
-              <p class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</p>
-              <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK ONLINE</a>
+          <div class="dark-overlay carousel-item">
+            <img src="media/covers/cover-homepage-3.jpg" alt="Third slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="brand-title display-2 animated fadeInDown">GRECKO</h1>
+                <h4 class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</h4>
+                <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK NOW</a>
+              </div>
             </div>
           </div>
-          <div class="carousel-item slide-4">
-            <div class="carousel-caption">
-              <h1 class="brand-title animated fadeInDown">GRECKO</h1>
-              <p class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</p>
-              <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK ONLINE</a>
+          <div class="dark-overlay carousel-item">
+            <img src="media/covers/cover-homepage-4.jpg" alt="Fourth slide">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="brand-title display-2 animated fadeInDown">GRECKO</h1>
+                <h4 class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</h4>
+                <a class="mt-3 btn btn-light animated fadeInUp" href="pages/reservations.html" role="button">BOOK NOW</a>
+              </div>
             </div>
           </div>
+          <a class="carousel-control-prev" href="#cover" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#cover" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </div>
 
