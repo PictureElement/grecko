@@ -16,7 +16,7 @@
     <!-- Default stylesheet -->
     <link rel="stylesheet" href="../css/main.css">
   </head>
-  <body>
+  <body id="top">
     <header>
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -54,11 +54,11 @@
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
-          <div class="ml-auto py-2">
-            <a class="d-inline-block border-right px-4 text-center" href="#"><i class="fa-social-nav fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="d-inline-block border-right px-4" href="#"><i class="fa-social-nav fa fa-tripadvisor" aria-hidden="true"></i></a>
-            <a class="d-inline-block border-right px-4" href="#"><i class="fa-social-nav fa fa-instagram" aria-hidden="true"></i></a>
-            <a class="d-inline-block px-4" href="#"><i class="fa-social-nav fa fa-envelope" aria-hidden="true"></i></a>
+          <div class="ml-auto">
+            <a class="nav-social mr-2" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="nav-social mr-2" href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+            <a class="nav-social mr-2" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a class="nav-social" href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>
           </div>
         </div>
       </nav>
@@ -603,9 +603,9 @@
           <div class="col-md-3 h-100 border-left-custom">
             <h5 class="page-footer-title mt-3 mt-md-0">FOLLOW US</h5>
             <div class="mb-3">
-              <a href="#"><i class="fa-social fa fa-facebook" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa-social fa fa-tripadvisor ml-4" aria-hidden="true"></i></a>
-              <a href="#"><i class="fa-social fa fa-instagram ml-4" aria-hidden="true"></i></a>
+              <a class="footer-social" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a class="footer-social" href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+              <a class="footer-social" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
             </div>
           </div>
           <div class="col-md-3 h-100 border-left-custom">
@@ -627,6 +627,9 @@
         Design &amp; Development by <a href="https://pictureelement.github.io/portfolio-2/">PictureElement</a> (Marios Sofokleous).
       </div>
     </footer>
+    <a id="back-to-top" class="back-to-top" href="#top">
+      <i class="fa fa-long-arrow-up" aria-hidden="true"></i>
+    </a>
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -639,6 +642,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
       crossorigin="anonymous">
     </script>
+    <script src="../js/site.js"></script>
     <script src="../js/menu-animations.js"></script>
   </body>
 </html>

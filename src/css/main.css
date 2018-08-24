@@ -33,20 +33,46 @@ a, a:hover {
   color: inherit;
 }
 
+.back-to-top {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+  text-align: center;
+  line-height: 40px;
+}
+
+.back-to-top:hover {
+  background-color: #0069d9;
+  opacity: 1;
+}
+
+.back-to-top i {
+  color: #fff;
+  font-size: 20px;
+}
+
 /* 
  * HELPER CLASSES
  */
 
 .special-title-1 {
   margin-bottom: .5rem;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .special-title-2 {
   font-family: 'Fredericka the Great', cursive;
   margin-bottom: 2rem;
-  font-size: 38px;
+  font-size: 2.5rem;
 }
 
 .banner {
@@ -273,6 +299,8 @@ a, a:hover {
 }
 
 .page-footer-copyright {
+  position: relative;
+  z-index: 2;
   background: #364859;
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -287,37 +315,78 @@ a, a:hover {
 }
 
 /* 
- * SOCIAL ICONS
+ * NAVBAR SOCIAL
  */
 
- .fa-social-nav {
-  font-size: 1em !important;
-  line-height: 30px !important;
-  color: rgba(0, 0, 0, .5);
+.nav-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
   transition: all 0.3s ease-in-out;
 }
 
-.fa-social-nav:hover, .fa-social:active { 
+.nav-social:hover {
   transform: scale(1.1) rotate(360deg);
+}
+
+.nav-social i {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  color: rgba(0, 0, 0, .5);
+}
+
+.nav-social i:hover {
   color: rgba(0, 0, 0, .7);
 }
 
-.fa-social {
-  font-size: 1em !important;
-  line-height: 30px !important;
-  color: rgba(255, 255, 255, 0.8);
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  transition: all 0.3s ease-in-out;
+/*
+ * FOOTER SOCIAL
+ */
+.footer-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
   background-color: #007bff;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  line-height: 47px;
   border-radius: 50%;
 }
 
-.fa-social:hover, .fa-social:active { 
+.footer-social:hover {
+  background-color: #0069d9;
   transform: scale(1.1) rotate(360deg);
+}
+
+.footer-social i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-social:not(:first-child) {
+  margin-left: 2rem;
+}
+
+/* 
+ * CONTACT SOCIAL
+ */
+
+ .contact-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+}
+
+.contact-social i {
+  font-size: 20px;
   color: rgba(255, 255, 255, 1);
-  box-shadow: 1px 1px 3px #333; 
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-social i:hover {
+  transform: scale(1.1) rotate(360deg);
 }
 
 /* 
@@ -363,13 +432,14 @@ a, a:hover {
 }
 
 .about-history-title h3, .about-job-openings-title h3 {
+  font-family: 'Fredericka the Great', cursive;
   margin-bottom: 1rem;
   color: #007bff;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 .about-history-title p, .about-job-openings-title p {
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 .about-horizontal-rule {
@@ -459,7 +529,7 @@ a, a:hover {
 }
 
 .contact-form ::placeholder {
-  color: rgba(255, 255, 255, .5) !important;
+  color: rgba(255, 255, 255, .7) !important;
 }
 
 .contact-form label {
@@ -469,6 +539,11 @@ a, a:hover {
 .contact-form input, .contact-form textarea {
   background: none !important;
   border: 3px solid #fff !important;
+  color: rgba(255, 255, 255, 1);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  color: rgba(255, 255, 255, 1);
 }
 
 .contact-details {
@@ -861,6 +936,10 @@ a, a:hover {
     padding-right: initial;
   }
 
+  .footer-social:not(:first-child) {
+    margin-left: 0.5rem;
+  }
+  
   .food-image {
     margin-bottom: 0;
   }
@@ -870,15 +949,14 @@ a, a:hover {
   }
 
   .special-title-2 {
-    font-size: 64px;
+    font-size: 3.5rem;
   }
+}
 
-  .about-history-title h3, .about-job-openings-title h3 {
-    font-size: 35px;
-  }
-
-  .about-history-title p, .about-job-openings-title p {
-    font-size: 35px;
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .footer-social:not(:first-child) {
+    margin-left: 1.5rem;
   }
 }
 
