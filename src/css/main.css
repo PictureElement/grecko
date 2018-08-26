@@ -513,6 +513,7 @@ a, a:hover {
 }
 
 .contact-information-wrapper {
+  position: relative;
   color: white;
   background-color: #777;
   background-position: center center;
