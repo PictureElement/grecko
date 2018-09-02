@@ -71,7 +71,7 @@ a, a:hover {
 
 .special-title-2 {
   font-family: 'Fredericka the Great', cursive;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 2.5rem;
 }
 
@@ -176,16 +176,16 @@ a, a:hover {
  * HOMEPAGE-MENU
  */
 .homepage-menu {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .homepage-menu-description {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .homepage-desserts, .homepage-drinks {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 
 /* 
@@ -193,30 +193,32 @@ a, a:hover {
  */
 
 .homepage-about-us {
-  height: 500px;
+  height: 550px;
   overflow: hidden;
   position: relative;
+  background-color: #777;
 }
 
-.homepage-about-us-image {
+.homepage-about-us-bg {
   min-width: 100%;
   object-fit: cover;
   height: 100%;
 }
 
 .homepage-about-us-caption {
-  position: absolute;
   /* Centering vertically and horizontally */
+  position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   z-index: 2000;
+  padding: 0 1rem;
 }
 
 .homepage-about-us-description {
   max-width: 50em;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 /* 
@@ -224,12 +226,12 @@ a, a:hover {
  */
 
 .homepage-special-offers {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .card-2, .card-3 {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .top-right {
@@ -243,14 +245,28 @@ a, a:hover {
  */
 
 .homepage-testimonials {
+  height: 700px;
+  overflow: hidden;
   position: relative;
-  padding: 4rem 15px;
-  color: #fff;
   background-color: #777;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-wooden-texture.jpg");
+  color: #fff;
+}
+
+.homepage-testimonials-bg {
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.homepage-testimonials-caption {
+  padding: 0 1rem;
+  position: absolute;
+  /* Centering vertically and horizontally */
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
 }
 
 .homepage-testimonials-carousel {
@@ -260,7 +276,7 @@ a, a:hover {
 
 .homepage-testimonials blockquote {
   max-width: 65%;
-  margin: 2rem auto 0 auto;
+  margin: 2.5rem auto 0 auto;
 }
 
 .homepage-testimonials blockquote p {
@@ -285,17 +301,17 @@ a, a:hover {
 
 .page-footer {  
   color: rgba(255,255,255,0.5);
-  padding-top: 4rem;
+  padding-top: 5rem;
   font-size: 0.75rem;
   text-align: center;
 }
 
 .page-footer > .container {
-  padding-bottom: 4rem;
+  padding-bottom: 5rem;
 }
 
 .page-footer .row {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 .page-footer-title {
@@ -313,8 +329,8 @@ a, a:hover {
   position: relative;
   z-index: 2;
   background: #364859;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .page-footer a {
@@ -376,7 +392,7 @@ a, a:hover {
 }
 
 .footer-social:not(:first-child) {
-  margin-left: 2rem;
+  margin-left: 2.5rem;
 }
 
 /* 
@@ -438,8 +454,8 @@ a, a:hover {
 }
 
 .about-history {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .about-history-title h3, .about-job-openings-title h3 {
@@ -450,7 +466,7 @@ a, a:hover {
 }
 
 .about-history-title p, .about-job-openings-title p {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .about-horizontal-rule {
@@ -459,8 +475,8 @@ a, a:hover {
 }
 
 .about-job-openings {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 /* 
@@ -469,14 +485,14 @@ a, a:hover {
 
 .reservations-description {
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   max-width: 50em;
 }
 
 .reservations-form {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background-color: #777;
   background-position: center center;
   background-size: cover;
@@ -509,13 +525,13 @@ a, a:hover {
 
 .contact-directions {
   text-align: center;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   max-width: 50em;
 }
 
 .contact-directions > dl > dt:nth-child(3) {
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .contact-horizontal-rule {
@@ -536,8 +552,8 @@ a, a:hover {
 .contact-information {
   max-width: 50em;
   margin-top: 0;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .contact-form ::placeholder {
@@ -560,7 +576,7 @@ a, a:hover {
 
 .contact-details {
   border: none;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
 }
 
 .contact-details h6 {
@@ -596,23 +612,23 @@ a, a:hover {
 }
 
 .food-jumbotron h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .food-category {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 .food-category h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .menu-item {
-  padding: 2rem 0;
+  padding: 2.5rem 0;
 }
 
 .food-image {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -674,7 +690,7 @@ a, a:hover {
 }
 
 .drinks-jumbotron h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .drinks-descriptions {
@@ -682,11 +698,11 @@ a, a:hover {
 }
 
 .drink-category {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 .drink-category h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .drink-title {
@@ -748,7 +764,7 @@ a, a:hover {
 }
 
 .desserts-jumbotron h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .desserts-descriptions {
@@ -756,15 +772,15 @@ a, a:hover {
 }
 
 .dessert-category {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
 .dessert-category h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 .dessert-image {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -820,12 +836,12 @@ a, a:hover {
 }
 
 .album-content {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .album-content .card {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 /*
@@ -860,7 +876,7 @@ a, a:hover {
   cursor: pointer;
   top: 10px;
   right: 25px;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .lightbox-content {
@@ -875,12 +891,12 @@ a, a:hover {
 }
 
 .gallery-thumbnails {
-  padding-top: 4rem;
-  padding-bottom: 2rem;
+  padding-top: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .gallery-thumbnails .col-md-4 {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 /* CSS ANIMATIONS */
