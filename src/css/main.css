@@ -193,19 +193,30 @@ a, a:hover {
  */
 
 .homepage-about-us {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  height: 500px;
+  overflow: hidden;
   position: relative;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/homepage/homepage-about.jpg");
+}
+
+.homepage-about-us-image {
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.homepage-about-us-caption {
+  position: absolute;
+  /* Centering vertically and horizontally */
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 2000;
 }
 
 .homepage-about-us-description {
   max-width: 50em;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 /* 
