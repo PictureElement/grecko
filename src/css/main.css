@@ -412,19 +412,32 @@ a, a:hover {
 /* 
  * ABOUT
  */
-.about-jumbotron {
-  position: relative;
-  height: calc(100vh - 62px);
+
+ .about-jumbotron {
   text-align: center;
+  overflow: hidden;
+  position: relative;
   background-color: #777;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-about.jpg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 0;
+  border-radius: 0%;
+  height:  calc(100vh - 62px);
+}
+
+.about-jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.about-jumbotron-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .about-jumbotron h2 {
@@ -436,7 +449,7 @@ a, a:hover {
   width: 50px;
   height: 50px;
   position: absolute;
-  bottom: 60px;
+  bottom: -160px;
   left: calc(50% - 25px);
 }
 
@@ -580,20 +593,31 @@ a, a:hover {
  * FOOD MENU
  */
 
- .food-jumbotron {
-  position: relative;
-  height: calc(100vh - 62px);
+.food-jumbotron {
   text-align: center;
+  overflow: hidden;
+  position: relative;
   background-color: #777;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-food-menu.jpg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 0;
+  border-radius: 0%;
+  height:  calc(100vh - 62px);
+}
+
+.food-jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.food-jumbotron-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .menu-icon {
@@ -666,20 +690,31 @@ a, a:hover {
  * DRINKS MENU
  */
 
- .drinks-jumbotron {
-  position: relative;
-  height: calc(100vh - 62px);
+.drinks-jumbotron {
   text-align: center;
+  overflow: hidden;
+  position: relative;
   background-color: #777;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-drinks-menu.jpg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 0;
+  border-radius: 0%;
+  height:  calc(100vh - 62px);
+}
+
+.drinks-jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.drinks-jumbotron-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .drinks-jumbotron h1 {
@@ -740,20 +775,31 @@ a, a:hover {
  * DESSERTS MENU
  */
 
- .desserts-jumbotron {
-  position: relative;
-  height: calc(100vh - 62px);
+.desserts-jumbotron {
   text-align: center;
+  overflow: hidden;
+  position: relative;
   background-color: #777;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-desserts-menu.jpg");
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  border-radius: 0;
+  border-radius: 0%;
+  height:  calc(100vh - 62px);
+}
+
+.desserts-jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.desserts-jumbotron-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
 .desserts-jumbotron h1 {
