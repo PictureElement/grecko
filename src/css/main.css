@@ -31,6 +31,11 @@ label {
   top: -46px;
 }
 
+/* Google map sidebar */
+#featurecardPanel > div > div > div.qqvbed-tJHJj {
+  background-color: #007bff !important;
+}
+
 input, textarea {
   border-radius: 0 !important;
 }
@@ -497,13 +502,28 @@ a, a:hover {
 }
 
 .reservations-form {
+  overflow: hidden;
+  position: relative;
+  background-color: #777;
+}
+
+.reservations-form-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.reservations-form > form {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 50em;
+  margin-top: 0;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #777;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../media/covers/cover-reservations.jpg");
 }
 
 .reservations-form ::placeholder {
@@ -546,16 +566,24 @@ a, a:hover {
 }
 
 .contact-information-wrapper {
+  overflow: hidden;
   position: relative;
-  color: white;
   background-color: #777;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../media/covers/cover-wooden-texture.jpg");
+}
+
+.contact-information-wrapper-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
 }
 
 .contact-information {
+  position: relative;
+  z-index: 1;
+  color: #fff;
   max-width: 50em;
   margin-top: 0;
   padding-top: 5rem;
