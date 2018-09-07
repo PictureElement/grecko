@@ -140,6 +140,10 @@ a, a:hover {
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
 }
 
+.nav-link, .dropdown-item {
+  font-weight: 500;
+}
+
 /*
  * COVER
  */
@@ -166,7 +170,7 @@ a, a:hover {
   width: 100%;
   height: 100%;
   background: #000;
-  opacity: 0.4;
+  opacity: 0.3;
   position: absolute;
   left: 0;
   top: 0;
