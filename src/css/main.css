@@ -96,10 +96,10 @@ a, a:hover {
   display: block;
   width: 235px;
   height: 60px;
-  border: 1px solid #006fe6;
+  border: 1px solid #003166;
   text-align: center;
   color: #fff;
-  background: #007bff;
+  background: #003D7F;
   border-radius: 4px;
   box-shadow: 0 0 30px rgba(0,0,0,.15) inset, 0 6px 10px rgba(0,0,0,.15);
 }
@@ -113,9 +113,9 @@ a, a:hover {
   display: block;
   width: 60px;
   height: 0px;
-  border: 30px solid #007bff;
-  border-right: 20px solid #0056b3;
-  border-bottom-color: #006fe6;
+  border: 30px solid #003D7F;
+  border-right: 20px solid #001933;
+  border-bottom-color: #003166;
   border-left-color: transparent;
   transform: rotate(-5deg);
 }
@@ -123,7 +123,7 @@ a, a:hover {
 .banner::after {
   left: auto;
   right: -37px;
-  border-left: 20px solid #0056b3;
+  border-left: 20px solid #001933;
   border-right: 30px solid transparent;
   transform: rotate(5deg);
 }
@@ -899,6 +899,7 @@ a, a:hover {
  */
 
 .album-description {
+  background: #003d7f;
   padding-top: 8rem;
   padding-bottom: 8rem;
   text-align: center;
