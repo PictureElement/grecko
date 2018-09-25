@@ -1,3 +1,4 @@
 1. Back to top
-2. Smooth scrolling bug on carousel
-3. Lazy loading (defer images)
+2. Smooth scrolling bug on carousel (image has the shape of an ellipsis)
+3. Lazy loading (defer images) on food, desserts, drinks, album and gallery pages
+4. Implement a PWA
