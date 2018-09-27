@@ -29,7 +29,7 @@
 
   // Service worker registration
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('../service-worker.js')
+    navigator.serviceWorker.register('/website-template-3/service-worker.js', {scope: '/website-template-3/'})
       .then(function(registration) {
         console.log('Service Worker registration successful with scope: ',
         registration.scope);
