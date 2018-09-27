@@ -46,6 +46,18 @@ module.exports = function(grunt) {
         cwd: 'src/',
         src: 'index.html',
         dest: 'dist/'
+      },
+      t3: {
+        expand: true,
+        cwd: 'src/',
+        src: 'manifest.json',
+        dest: 'dist/'
+      },
+      t4: {
+        expand: true,
+        cwd: 'src/',
+        src: 'service-worker.js',
+        dest: 'dist/'
       }
     },
 
