@@ -15,8 +15,6 @@ var filesToCache = [
   '/website-template-3/gallery-location.html',
   '/website-template-3/gallery-staff.html',
   '/website-template-3/reservations.html',
-  '/website-template-3/pages/offline.html',
-  '/website-template-3/pages/404.html',
 
   '/website-template-3/js/about-animations.js',
   '/website-template-3/js/album-animations.js',
