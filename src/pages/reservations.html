@@ -214,18 +214,5 @@
     </script>
     <script src="../js/site.js"></script>
     <script src="../js/reservations-animations.js"></script>
-    <script>
-      // Service worker registration
-      if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('../service-worker.js')
-          .then(function(registration) {
-            console.log('Service Worker registration successful with scope: ',
-            registration.scope);
-          })
-          .catch(function(err) {
-            console.log('Service Worker registration failed: ', err);
-          });
-      }
-    </script>
   </body>
 </html>
