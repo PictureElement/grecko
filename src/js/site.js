@@ -1,7 +1,7 @@
 (function() {
 
   // Smooth scrolling
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+  document.querySelectorAll('.smooth-scroll').forEach(function(anchor) {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
@@ -37,17 +37,5 @@
   $googleMapContainer.mouseleave(function() {
     $(this).find('iframe').removeClass('enable-zoom-scrolling');
   });
-
-  // Service worker registration
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/website-template-3/service-worker.js', {scope: '/website-template-3/'})
-      .then(function(registration) {
-        console.log('Service Worker registration successful with scope: ',
-        registration.scope);
-      })
-      .catch(function(err) {
-        console.log('Service Worker registration failed: ', err);
-      });
-  }
 
 })();
