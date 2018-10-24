@@ -27,6 +27,17 @@
     }
   });
 
+  // Disable mouse zoom scrolling on Google Map by default
+  var $googleMapContainer = $('#googleMapContainer');
+
+  $googleMapContainer.click(function() {
+    $(this).find('iframe').addClass('enable-zoom-scrolling');
+  });
+
+  $googleMapContainer.mouseleave(function() {
+    $(this).find('iframe').removeClass('enable-zoom-scrolling');
+  });
+
   // Service worker registration
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/website-template-3/service-worker.js', {scope: '/website-template-3/'})

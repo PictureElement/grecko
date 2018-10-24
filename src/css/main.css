@@ -29,6 +29,13 @@ label {
   width: 100%;
   position: relative;
   top: -46px;
+  pointer-events: none;
+  outline: none;
+  border: none;
+}
+
+.google-map.enable-zoom-scrolling {
+  pointer-events: auto;
 }
 
 /* Google map sidebar */
