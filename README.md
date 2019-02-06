@@ -28,20 +28,15 @@ After downloading, simply edit the HTML and CSS files included with the template
 
 * [Bootstrap](https://github.com/twbs/bootstrap) - CSS framework
 * [jQuery](https://github.com/jquery/jquery) - JavaScript library
+* [Google Fonts](https://github.com/google/fonts) - Library of libre licensed fonts
+* [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome) - The iconic SVG, font, and CSS toolkit
+* [Animate.css](https://github.com/daneden/animate.css) - A cross-browser library of CSS animations
+* [lazysizes](https://github.com/aFarkas/lazysizes) - Lazy loader for images, iframes and more
 
 ## Author
 
-[Marios Sofokleous (PictureElement)](https://www.msof.me/)
+[Marios Sofokleous](https://www.msof.me/) (PictureElement)
 
 ## Copyright &amp; License
 
-&copy; 2018 Marios Sofokleous (PictureElement). Code released under the [MIT](LICENSE.md) license.
-
-## Acknowledgments
-
-* [Google Fonts](https://github.com/google/fonts)
-* [Font Awesome Free](https://github.com/FortAwesome/Font-Awesome)
-* [Bootstrap](https://github.com/twbs/bootstrap)
-* [jQuery](https://github.com/jquery/jquery)
-* [Animate.css](https://github.com/daneden/animate.css)
-* [lazysizes](https://github.com/aFarkas/lazysizes)
+&copy; 2019 Marios Sofokleous (PictureElement). Code released under the [MIT](LICENSE) license.
