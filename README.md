@@ -37,6 +37,10 @@ After downloading, simply edit the HTML and CSS files included with the template
 
 [Marios Sofokleous](https://www.msof.me/) (PictureElement)
 
+## Todo
+1. Add information regarding the usage of script.sh and the responsive breakpoint generator program in node.js
+2. Improve delivery of background images
+
 ## Copyright &amp; License
 
 &copy; 2019 Marios Sofokleous (PictureElement). Code released under the [MIT](LICENSE) license.
