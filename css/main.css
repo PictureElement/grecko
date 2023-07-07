@@ -1,0 +1,1097 @@
+/*
+ * GLOBAL
+ */
+
+html {
+  font-size: 1rem;
+}
+
+body {
+  font-size: 1rem;
+  color: #404040;
+  line-height: 1.75;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  padding-top: 62px;
+}
+
+label {
+  font-weight: 700;
+}
+
+.homepage-google-map {
+  height: 400px;
+  overflow: hidden;
+}
+
+.google-map {
+  height: 446px;
+  width: 100%;
+  position: relative;
+  top: -46px;
+  pointer-events: none;
+  outline: none;
+  border: none;
+}
+
+.google-map.enable-zoom-scrolling {
+  pointer-events: auto;
+}
+
+/* Google map sidebar */
+#featurecardPanel > div > div > div.qqvbed-tJHJj {
+  background-color: #007bff !important;
+}
+
+input, textarea {
+  border-radius: 0 !important;
+}
+
+a, a:hover {
+  color: inherit;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.5;
+  text-align: center;
+  line-height: 40px;
+}
+
+.back-to-top:hover {
+  background-color: #0069d9;
+  opacity: 1;
+}
+
+.back-to-top i {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* 
+ * HELPER CLASSES
+ */
+
+.special-title-1 {
+  margin-bottom: .8rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.special-title-2 {
+  font-family: 'Fredericka the Great', cursive;
+  margin-bottom: 2.8rem;
+  font-size: 2.8rem;
+}
+
+.banner {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 60px;
+  position: relative;
+  margin: 0 auto;
+  display: block;
+  width: 235px;
+  height: 60px;
+  border: 1px solid #003166;
+  text-align: center;
+  color: #fff;
+  background: #003D7F;
+  border-radius: 4px;
+  box-shadow: 0 0 30px rgba(0,0,0,.15) inset, 0 6px 10px rgba(0,0,0,.15);
+}
+
+.banner::before, .banner::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: -37px;
+  top: 24px;
+  display: block;
+  width: 60px;
+  height: 0px;
+  border: 30px solid #003D7F;
+  border-right: 20px solid #001933;
+  border-bottom-color: #003166;
+  border-left-color: transparent;
+  transform: rotate(-5deg);
+}
+
+.banner::after {
+  left: auto;
+  right: -37px;
+  border-left: 20px solid #001933;
+  border-right: 30px solid transparent;
+  transform: rotate(5deg);
+}
+
+.box-shadow {
+  box-shadow: 0 0.28rem 0.78rem rgba(0, 0, 0, .05);
+}
+
+/*
+ * NAVBAR
+ */
+
+.navbar {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.nav-link, .dropdown-item {
+  font-weight: 700;
+}
+
+/*
+ * COVER
+ */
+
+ .cover .carousel-item > img {
+  min-width: 100%;
+  height: calc(100vh - 62px);
+  object-fit: cover;
+}
+
+.cover .carousel-caption {
+  bottom: initial;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.cover .carousel-caption > a {
+  border-radius: 0;
+}
+
+.dark-overlay::after {
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.brand-title {
+  font-family: 'Fredericka the Great', cursive;
+  /* font size = min font size + (max font size - min font size) * (100vw - min viewport size) / (max viewport size - min viewport size) */
+  font-size: calc(50px + (120 - 50) * (100vw - 320px)/(2560 - 320));
+}
+
+.brand-description {
+  /* font size = min font size + (max font size - min font size) * (100vw - min viewport size) / (max viewport size - min viewport size) */
+  font-size: calc(16px + (40 - 16) * (100vw - 320px)/(2560 - 320));
+}
+
+/*
+ * HOMEPAGE-MENU
+ */
+.homepage-menu {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.homepage-menu-description {
+  margin-top: 2.8rem;
+}
+
+.homepage-desserts, .homepage-drinks {
+  margin-top: 8rem;
+}
+
+/* 
+ * HOMEPAGE-ABOUT-US
+ */
+
+.homepage-about-us {
+  overflow: hidden;
+  position: relative;
+  background-color: #001F40;
+}
+
+.homepage-about-us-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.homepage-about-us-caption {
+  text-align: center;
+  position: relative;
+  margin: 8rem 1rem;
+  z-index: 1;
+}
+
+.homepage-about-us-description {
+  max-width: 50em;
+  margin: 0 auto 2.8rem;
+}
+
+/* 
+ * HOMEPAGE-SPECIALS & EVENTS
+ */
+
+.homepage-special-offers {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.card-2, .card-3 {
+  margin-top: 2.8rem;
+}
+
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
+/* 
+ * HOMEPAGE-TESTIMONIALS
+ */
+
+.homepage-testimonials {
+  overflow: hidden;
+  position: relative;
+  background-color: #001F40;
+  color: #fff;
+}
+
+.homepage-testimonials-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.homepage-testimonials-caption {
+  position: relative;
+  margin: 8rem 1rem;
+  z-index: 1;
+}
+
+.homepage-testimonials blockquote {
+  max-width: 50em;
+  margin: 2.8rem auto 0 auto;
+}
+
+.homepage-testimonials blockquote footer {
+  color: #e6e6e6;
+}
+
+.homepage-testimonials blockquote footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.homepage-testimonials blockquote footer a:hover {
+  text-decoration: none;
+}
+
+/* 
+ * FOOTER
+ */
+
+.page-footer {  
+  color: #E5E5E5;
+  padding-top: 4rem;
+  font-size: 0.75rem;
+  text-align: center;
+  background: #001F40;
+  line-height: 1.75;
+}
+
+.page-footer > .container {
+  padding-bottom: 4rem;
+}
+
+.page-footer .row {
+  padding-top: 4rem;
+}
+
+.page-footer-title {
+  font-size: .75rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.border-left-custom {
+  border-left: none;
+}
+
+.page-footer-copyright {
+  position: relative;
+  z-index: 2;
+  background: #003D7F;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.page-footer a {
+  text-decoration: underline;
+}
+
+.page-footer a:hover {
+  text-decoration: none;
+}
+
+/* 
+ * NAVBAR SOCIAL
+ */
+
+.nav-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-social:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+
+.nav-social i {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+  color: rgba(0, 0, 0, .5);
+}
+
+.nav-social i:hover {
+  color: rgba(0, 0, 0, .7);
+}
+
+/*
+ * FOOTER SOCIAL
+ */
+.footer-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #007bff;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  line-height: 47px;
+  border-radius: 50%;
+}
+
+.footer-social:hover {
+  background-color: #0069d9;
+  transform: scale(1.1) rotate(360deg);
+}
+
+.footer-social i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer-social:not(:first-child) {
+  margin-left: 2.8rem;
+}
+
+/* 
+ * CONTACT SOCIAL
+ */
+
+ .contact-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 43px;
+}
+
+.contact-social i {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 1);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-social i:hover {
+  transform: scale(1.1) rotate(360deg);
+}
+
+/* 
+ * ABOUT
+ */
+
+ .about-jumbotron {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #001F40;
+  border-radius: 0%;
+  height:  calc(100vh - 62px);
+}
+
+.about-jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.about-jumbotron-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-jumbotron h2 {
+  margin-bottom: .8rem;
+}
+
+.about-arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: -160px;
+  left: calc(50% - 25px);
+}
+
+.about-arrow .fa-angle-down {
+  line-height: 50px;
+  font-size: 4em !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.about-history {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.about-history-title h3, .about-job-openings-title h3 {
+  font-family: 'Fredericka the Great', cursive;
+  margin-bottom: 1rem;
+  color: #007bff;
+  font-size: 1.8rem;
+}
+
+.about-history-title p, .about-job-openings-title p {
+  font-size: 2.8rem;
+}
+
+.about-horizontal-rule {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.about-job-openings {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+/* 
+ * RESERVATIONS
+ */
+
+.reservations-description {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  max-width: 50em;
+}
+
+.reservations-form {
+  overflow: hidden;
+  position: relative;
+  background-color: #001F40;
+}
+
+.reservations-form-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.reservations-form > form {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 50em;
+  margin-top: 0;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.reservations-form ::placeholder {
+  color: #d9d9d9 !important;
+}
+
+.reservations-form form {
+  max-width: 50em;
+  margin: 0 auto;
+}
+
+.reservations-form label {
+  color: white;
+}
+
+.reservations-form input, .reservations-form textarea {
+  background: none !important;
+  border: 3px solid white !important;
+  color: #d9d9d9 !important;
+}
+ 
+/* 
+ * CONTACT
+ */
+
+.contact-directions {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  max-width: 50em;
+}
+
+.contact-directions > dl > dt:nth-child(3) {
+  margin-top: 2.8rem;
+}
+
+.contact-horizontal-rule {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-information-wrapper {
+  overflow: hidden;
+  position: relative;
+  background-color: #001F40;
+}
+
+.contact-information-wrapper-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.contact-information {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  max-width: 50em;
+  margin-top: 0;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.contact-form ::placeholder {
+  color: rgba(255, 255, 255, .7) !important;
+}
+
+.contact-form label {
+  color: #fff;
+}
+
+.contact-form input, .contact-form textarea {
+  background: none !important;
+  border: 3px solid #fff !important;
+  color: rgba(255, 255, 255, 1);
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+  color: rgba(255, 255, 255, 1);
+}
+
+.contact-details {
+  border: none;
+  margin-top: 2.8rem;
+}
+
+.contact-details h6 {
+  font-weight: 700;
+}
+
+/*
+ * FOOD MENU
+ */
+
+.food-jumbotron {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #001F40;
+  border-radius: 0%;
+  height:  calc(100vh - 62px);
+}
+
+.food-jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.food-jumbotron-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-icon {
+  max-width: 45px; 
+}
+
+.menu-icon-text {
+  display: none;
+}
+
+.food-jumbotron h1 {
+  margin-bottom: 2.8rem;
+}
+
+.food-category {
+  padding-top: 8rem;
+}
+
+.food-category h2 {
+  margin-bottom: 2.8rem;
+}
+
+.menu-item {
+  padding: 2.8rem 0;
+}
+
+.food-image {
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+.food-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.food-title:before {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  border-top: 2px dotted rgba(0,0,0,1);
+  display: block;
+  content: '';
+}
+
+.food-name {
+  position: relative;
+  padding-right: 15px;
+  background: #fff;
+}
+
+.food-price {
+  position: relative;
+  padding-left: 15px;
+  background: #fff;
+}
+
+.food-ingredients {
+  margin-bottom: 0;
+}
+
+.food-horizontal-rule {
+  margin: 0;
+}
+
+/*
+ * DRINKS MENU
+ */
+
+.drinks-jumbotron {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #001F40;
+  border-radius: 0%;
+  height:  calc(100vh - 62px);
+}
+
+.drinks-jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.drinks-jumbotron-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.drinks-jumbotron h1 {
+  margin-bottom: 2.8rem;
+}
+
+.drinks-descriptions {
+  max-width: 50em;
+}
+
+.drink-category {
+  padding-top: 8rem;
+}
+
+.drink-category h2 {
+  margin-bottom: 2.8rem;
+}
+
+.drink-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.drink-title:before {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  border-top: 2px dotted rgba(0,0,0,1);
+  display: block;
+  content: '';
+}
+
+.drink-name {
+  position: relative;
+  padding-right: 15px;
+  background: #fff;
+}
+
+.drink-price {
+  position: relative;
+  padding-left: 15px;
+  background: #fff;
+}
+
+.drink-ingredients {
+  margin-bottom: 0;
+}
+
+.drink-horizontal-rule {
+  margin: 0;
+}
+
+/*
+ * DESSERTS MENU
+ */
+
+.desserts-jumbotron {
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  background-color: #001F40;
+  border-radius: 0%;
+  height:  calc(100vh - 62px);
+}
+
+.desserts-jumbotron-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.desserts-jumbotron-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.desserts-jumbotron h1 {
+  margin-bottom: 2.8rem;
+}
+
+.desserts-descriptions {
+  max-width: 50em;
+}
+
+.dessert-category {
+  padding-top: 8rem;
+}
+
+.dessert-category h2 {
+  margin-bottom: 2.8rem;
+}
+
+.dessert-image {
+  margin-bottom: 2.8rem;
+  text-align: center;
+}
+
+.dessert-title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.dessert-title:before {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  border-top: 2px dotted rgba(0,0,0,1);
+  display: block;
+  content: '';
+}
+
+.dessert-name {
+  position: relative;
+  padding-right: 15px;
+  background: #fff;
+}
+
+.dessert-price {
+  position: relative;
+  padding-left: 15px;
+  background: #fff;
+}
+
+.dessert-ingredients {
+  margin-bottom: 0;
+}
+
+.dessert-horizontal-rule {
+  margin: 0;
+}
+
+/*
+ * ALBUM
+ */
+
+.album-description {
+  background: #003d7f;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.album-description h2 {
+  margin-bottom: 0;
+}
+
+.album-content {
+  padding-top: 8rem;
+  padding-bottom: 2.8rem;
+}
+
+.album-content .card {
+  margin-bottom: 2.8rem;
+}
+
+/*
+ * GALLERY
+ */
+
+.gallery-description {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+  background: white;
+}
+
+.gallery-description h2 {
+  margin-bottom: 0;
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1100;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background: black;
+  color: grey;
+}
+
+.lightbox label {
+  position: absolute;
+  cursor: pointer;
+  top: 10px;
+  right: 25px;
+  font-size: 2.8rem;
+}
+
+.lightbox-content {
+  max-width: 800px;
+  width: 80%;
+  /* Horizontal & Vertical Centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.gallery-thumbnails {
+  padding-top: 8rem;
+  padding-bottom: 2.8rem;
+}
+
+.gallery-thumbnails .col-md-4 {
+  margin-bottom: 2.8rem;
+}
+
+/* CSS ANIMATIONS */
+.navbar-brand.animated {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.about-arrow.animated {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+/*
+ * MEDIA QUERIES
+ */
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  .menu-icon-text {
+    display: block;
+  }
+}
+ 
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .homepage-desserts, .homepage-drinks {
+    margin-top: 0;
+  }
+
+  .card-2, .card-3 {
+    margin-top: 0;
+  }
+
+  .desserts, .drinks, .contact-details {
+    margin-top: 0;
+  }
+
+  .menu-icon {
+    max-width: 60px; 
+  }
+
+  .contact-details {
+    border-left: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  .border-left-custom {
+    border-left: 1px solid rgba(255, 255, 255, 0.1) !important;
+  }
+
+  .page-footer {
+    text-align: left;
+  }
+
+  .page-footer-title::before {
+    content: '';
+    width: 30px;
+    border-top: #007bff;
+    border-top-style: solid;
+    border-top-width: 3px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .footer-title-h5::before {
+    content: '';
+    display: block;
+    width: 30px;
+    border-top: 3px solid #007bff;
+    margin-bottom: .8rem;
+  }
+
+  .page-footer .row {
+    padding-left: initial;
+    padding-right: initial;
+  }
+
+  .footer-social:not(:first-child) {
+    margin-left: 0.7rem;
+  }
+  
+  .food-image {
+    margin-bottom: 0;
+  }
+
+  .dessert-image {
+    margin-bottom: 0;
+  }
+
+  .special-title-2 {
+    font-size: 3.8rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .footer-social:not(:first-child) {
+    margin-left: 1.8rem;
+  }
+}
+
+/* Phones - Landscape Mode */
+@media only screen and (min-width: 560px) and (max-width: 850px) and (orientation: landscape) { 
+  .food-jumbotron h1, .desserts-jumbotron h1, .drinks-jumbotron h1 {
+    margin-bottom: 1rem;
+    font-size: 25px;
+  }
+  .about-arrow {
+    display: none;
+  }
+  .menu-icon-text {
+    display: none;
+  }
+  .menu-icon {
+    max-width: 30px;
+  }
+}
