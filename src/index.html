@@ -174,7 +174,7 @@
                 https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2560/v1535322301/website-template-3/cover-homepage-3.jpg 2560w"
               src="https://res.cloudinary.com/pictureelement/image/upload/q_auto,f_auto,c_scale,w_2560/v1535322301/website-template-3/cover-homepage-3.jpg"
               alt="Third slide">
-            <div class="container">
+            <div id="map" style="height: 400px;" class="container">
               <div class="carousel-caption">
                 <h1 class="brand-title display-2 animated fadeInDown">GRECKO</h1>
                 <h4 class="brand-description animated fadeInDown">BAR &amp; RESTAURANT</h4>
@@ -623,5 +623,21 @@
     </script>
     <script src="js/site.js"></script>
     <script src="js/homepage-animations.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script>
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE},
+          zoom: YOUR_ZOOM_LEVEL
+        });
+      
+        var marker = new google.maps.Marker({
+          position: {lat: YOUR_LATITUDE, lng: YOUR_LONGITUDE},
+          map: map,
+          title: 'Restaurant Name'
+        });
+      }
+      
+    </script>
   </body>
 </html>
