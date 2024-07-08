@@ -1,9 +1,9 @@
 (function() {
 
-  // Smooth scrolling
+  // Smooth scrolling functionality
   document.querySelectorAll('.smooth-scroll').forEach(function(anchor) {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+    anchor.addEventListener('click', function (event) {
+      event.preventDefault();
       document.querySelector(this.getAttribute('href')).scrollIntoView({
         behavior: 'smooth',
         block: 'start',
@@ -12,17 +12,15 @@
     });
   });
 
-  // Back to top hide/show
+  // Back to top button show/hide
   var $backToTop = $('#back-to-top');
-
   var offset = 2000;
   var duration = 400;
 
   $(window).scroll(function() {
-    if($(this).scrollTop() > offset) {
+    if ($(this).scrollTop() > offset) {
       $backToTop.fadeIn(duration);
-    }
-    else {
+    } else {
       $backToTop.fadeOut(duration);
     }
   });
@@ -30,11 +28,11 @@
   // Disable mouse zoom scrolling on Google Map by default
   var $googleMapContainer = $('#googleMapContainer');
 
-  $googleMapContainer.click(function() {
+  $googleMapContainer.on('click', function() {
     $(this).find('iframe').addClass('enable-zoom-scrolling');
   });
 
-  $googleMapContainer.mouseleave(function() {
+  $googleMapContainer.on('mouseleave', function() {
     $(this).find('iframe').removeClass('enable-zoom-scrolling');
   });
 
